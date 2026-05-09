@@ -1,49 +1,89 @@
-<div class="contact-container">
-  <h2>Get in Touch</h2>
-  <p>We’d love to hear from you. Fill out the form below and we’ll get back to you shortly.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-  <!-- Success Message -->
-  <div id="success-message" class="success-message" style="display:none;">
-    <strong>Message sent!</strong> Thanks for reaching out — we’ll respond soon.
-  </div>
+<body>
 
-<form
-  action="https://formspree.io/f/{FORM_ID}"
-  class="fs-form"
-  target="_top"
-  method="POST"
->
-  <div class="fs-field">
-    <label class="fs-label" for="name">Your Name</label>
-    <input class="fs-input" id="name" name="name" required />
-  </div>
-  <div class="fs-field">
-    <label class="fs-label" for="email">Email</label>
-    <input class="fs-input" id="email" name="email" required />
-    <p class="fs-description">
-      This will help me respond to your query via an email.
-    </p>
-  </div>
-  <div class="fs-field">
-    <label class="fs-label" for="message">Message</label>
-    <textarea
-      class="fs-textarea"
-      id="message"
-      name="message"
-      required
-    ></textarea>
-    <p class="fs-description">What would you like to discuss?</p>
-  </div>
-  <div class="fs-button-group">
-    <button class="fs-button" type="submit">Submit</button>
-  </div>
-</form>
-</div>
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
 
-<script>
-  // Show success message if ?sent=1
-  const params = new URLSearchParams(window.location.search);
-  if (params.get("sent") === "1") {
-    document.getElementById("success-message").style.display = "block";
-  }
-</script>
+  <!-- Header -->
+  <header>
+    <h1>Contact Us</h1>
+  </header>
+
+  <!-- Main Content Section -->
+  <section>
+
+    <div class="contact-container">
+      <h2>Get in Touch</h2>
+      <p>We’d love to hear from you. Fill out the form below and we’ll get back to you shortly.</p>
+
+      <!-- Success Message -->
+      <div id="success-message" class="success-message" style="display:none;">
+        <strong>Message sent!</strong> Thanks for reaching out — we’ll respond soon.
+      </div>
+
+      <!-- FORMSPREE FORM -->
+      <form
+        action="https://formspree.io/f/{FORM_ID}"
+        class="fs-form"
+        target="_top"
+        method="POST"
+      >
+        <div class="fs-field">
+          <label class="fs-label" for="name">Your Name</label>
+          <input class="fs-input" id="name" name="name" required />
+        </div>
+
+        <div class="fs-field">
+          <label class="fs-label" for="email">Email</label>
+          <input class="fs-input" id="email" name="email" required />
+          <p class="fs-description">
+            This will help me respond to your query via an email.
+          </p>
+        </div>
+
+        <div class="fs-field">
+          <label class="fs-label" for="message">Message</label>
+          <textarea
+            class="fs-textarea"
+            id="message"
+            name="message"
+            required
+          ></textarea>
+          <p class="fs-description">What would you like to discuss?</p>
+        </div>
+
+        <div class="fs-button-group">
+          <button class="fs-button" type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    © 2026 Collectiv Media
+  </footer>
+
+  <script>
+    // Show success message if ?sent=1
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("sent") === "1") {
+      document.getElementById("success-message").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
