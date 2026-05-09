@@ -146,3 +146,90 @@ nav a:hover {
   border-radius: 6px;
   margin-bottom: 1.5rem;
 }
+/* Contact section container */
+.contact-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+/* Headings and intro text */
+.contact-container h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #0d1117; /* matches your header */
+}
+
+.contact-container p {
+  margin-bottom: 25px;
+  color: #444;
+  font-size: 16px;
+}
+
+/* Form layout */
+.contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+.contact-form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #0d1117;
+}
+
+/* Inputs */
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background: #fafafa;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #0d1117;
+  background: white;
+  outline: none;
+}
+
+/* Textarea height */
+.contact-form textarea {
+  min-height: 150px;
+  resize: vertical;
+}
+
+/* Submit button styled like your site */
+.btn-submit {
+  background: #0d1117;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s ease;
+}
+
+.btn-submit:hover {
+  background: #222; /* matches your nav hover aesthetic */
+}
+
+/* Success message */
+.success-message {
+  background: #e6f9ec;
+  border: 1px solid #2ecc71;
+  color: #1e8f4d;
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
