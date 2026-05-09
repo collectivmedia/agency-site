@@ -1,12 +1,4 @@
-<nav> … </nav>
-
-<header> … </header>
-
-<section>
-  <h2>Get in Touch</h2>
-  <p>…</p>
-
- <form class="contact-form" method="POST" action="/api/contact">
+<form class="contact-form" action="https://formspree.io/f/xkoyqdda" method="POST">
   <label>Name</label>
   <input name="name" type="text" placeholder="Your name" required />
 
@@ -17,8 +9,6 @@
   <textarea name="message" placeholder="How can we help you?" required></textarea>
 
   <button type="submit">Send Message</button>
+  <input type="hidden" name="_redirect" value="https://collectivmedia.pages.dev/contact.html?sent=1">
+
 </form>
-
-</section>
-
-<footer> Collectiv Media, Inc. </footer>
