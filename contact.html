@@ -1,14 +1,38 @@
-<form class="contact-form" action="https://formspree.io/f/xkoyqdda" method="POST">
-  <label>Name</label>
-  <input name="name" type="text" placeholder="Your name" required />
+<div class="contact-container">
+  <h2>Get in Touch</h2>
+  <p>We’d love to hear from you. Fill out the form below and we’ll get back to you shortly.</p>
 
-  <label>Email</label>
-  <input name="email" type="email" placeholder="you@example.com" required />
+  <!-- Success Message -->
+  <div id="success-message" class="success-message" style="display:none;">
+    <strong>Message sent!</strong> Thanks for reaching out — we’ll respond soon.
+  </div>
 
-  <label>Message</label>
-  <textarea name="message" placeholder="How can we help you?" required></textarea>
+  <form class="contact-form" action="https://formspree.io/f/xkoyqdda" method="POST">
+    <div class="form-group">
+      <label>Name</label>
+      <input name="name" type="text" placeholder="Your name" required />
+    </div>
 
-  <button type="submit">Send Message</button>
-  <input type="hidden" name="_redirect" value="https://collectivmedia.pages.dev/contact.html?sent=1">
+    <div class="form-group">
+      <label>Email</label>
+      <input name="email" type="email" placeholder="you@example.com" required />
+    </div>
 
-</form>
+    <div class="form-group">
+      <label>Message</label>
+      <textarea name="message" placeholder="How can we help you?" required></textarea>
+    </div>
+
+    <input type="hidden" name="_redirect" value="https://collectivmedia.net/contact.html?sent=1">
+
+    <button type="submit" class="btn-submit">Send Message</button>
+  </form>
+</div>
+
+<script>
+  // Show success message if ?sent=1
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("sent") === "1") {
+    document.getElementById("success-message").style.display = "block";
+  }
+</script>
