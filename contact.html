@@ -7,6 +7,15 @@
     <strong>Message sent!</strong> Thanks for reaching out — we’ll respond soon.
   </div>
 
+<div class="contact-container">
+  <h2>Get in Touch</h2>
+  <p>We’d love to hear from you. Fill out the form below and we’ll get back to you shortly.</p>
+
+  <!-- Success Message -->
+  <div id="success-message" class="success-message" style="display:none;">
+    <strong>Message sent!</strong> Thanks for reaching out — we’ll respond soon.
+  </div>
+
   <form class="contact-form" action="https://formspree.io/f/xkoyqdda" method="POST">
     <div class="form-group">
       <label>Name</label>
@@ -27,6 +36,15 @@
 
     <button type="submit" class="btn-submit">Send Message</button>
   </form>
+</div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("sent") === "1") {
+    document.getElementById("success-message").style.display = "block";
+  }
+</script>
+
 </div>
 
 <script>
