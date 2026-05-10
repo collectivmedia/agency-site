@@ -81,6 +81,25 @@ section {
   margin-bottom: 10px;
 }
 
+.section-logo {
+  height: 60px;
+  width: auto;
+  margin-bottom: 20px;
+  opacity: 0.9;
+}
+
+.portfolio-watermark {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 300px;
+  width: auto;
+  opacity: 0.05;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+}
+
+
 /* -------------------------------------------------- */
 /* NAVIGATION                                          */
 /* -------------------------------------------------- */
