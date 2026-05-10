@@ -62,20 +62,20 @@ section {
 /* -------------------------------------------------- */
 
 .nav-logo img {
-  height: 42px;
+  height: 126px;
   width: auto;
   vertical-align: middle;
   margin-right: 20px;
 }
 
 .hero-logo {
-  height: 90px;
+  height: 270px;
   width: auto;
   margin-bottom: 20px;
 }
 
 .footer-logo img {
-  height: 36px;
+  height: 108px;
   width: auto;
   opacity: 0.85;
   margin-bottom: 10px;
