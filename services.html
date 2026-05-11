@@ -5,15 +5,95 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Services — Collectiv Media</title>
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Smooth fade + motion -->
+  <style>
+    /* Floating background accent */
+    .bg-accent {
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 260px;
+      height: 260px;
+      background: var(--brand-orange, #ff7a3d);
+      opacity: 0.12;
+      border-radius: 50%;
+      filter: blur(40px);
+      z-index: -1;
+    }
+
+    /* Section logo fix */
+    .section-logo {
+      display: block;
+      margin: 40px auto 10px auto;
+      height: 80px; /* resized */
+      width: auto;
+      opacity: 0.95;
+    }
+
+    /* Animated hero */
+    header {
+      position: relative;
+      overflow: hidden;
+    }
+
+    header h1 {
+      animation: slideDown 0.9s ease forwards;
+      opacity: 0;
+    }
+
+    header p {
+      animation: fadeIn 1.4s ease forwards;
+      opacity: 0;
+    }
+
+    @keyframes slideDown {
+      from { transform: translateY(-20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Service card animation */
+    .card {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    }
+
+    /* Divider bar */
+    .section-divider {
+      height: 4px;
+      width: 80px;
+      background: var(--brand-teal, #00b8b8);
+      margin: 40px auto 30px auto;
+      border-radius: 4px;
+    }
+  </style>
 </head>
 
 <body>
 
+  <!-- Background Accent -->
+  <div class="bg-accent"></div>
+
   <!-- Navigation -->
   <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="Assets/logo1_full_recolor.png" alt="Collectiv Media Logo" style="height:40px; width:auto;" />
+    </a>
+
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="services.html">Services</a>
+    <a href="NDIservices.html">Data Management Services</a>
+    <a href="portfolio.html">Portfolio</a>
     <a href="contact.html">Contact</a>
   </nav>
 
@@ -23,11 +103,13 @@
     <p>Creative strategy, digital media, and content systems built for growth.</p>
   </header>
 
- <!-- SECTION LOGO -->
-<img src="Assets/Collectiv_Media-whitesmall.jpg" alt="Collectiv Media Logo" class="section-logo" />
+  <!-- SECTION LOGO (fixed placement + size) -->
+  <img src="Assets/logo1_full_recolor.png" alt="Collectiv Media Logo" class="section-logo" />
 
   <!-- INTRO -->
   <section class="fade-in">
+    <div class="section-divider"></div>
+
     <h2 style="font-family: var(--font-display); font-size: 36px; margin-bottom: 20px;">
       What We Offer
     </h2>
@@ -119,6 +201,9 @@
 
   <!-- FOOTER -->
   <footer>
+    <div class="footer-logo">
+      <img src="Assets/logo1_full_recolor.png" alt="Collectiv Media Logo" style="height:34px; width:auto;" />
+    </div>
     © 2026 Collectiv Media — All Rights Reserved
   </footer>
 
