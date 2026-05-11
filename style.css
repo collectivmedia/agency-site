@@ -58,73 +58,141 @@ section {
 }
 
 /* -------------------------------------------------- */
-/* LOGOS — GLOBAL, CONSISTENT, NON-BREAKING           */
+/* LOGOS                                          */
 /* -------------------------------------------------- */
 
 .nav-logo img {
-  height: 48px;        /* universal nav size */
+  height: 126px;
   width: auto;
   vertical-align: middle;
   margin-right: 20px;
 }
 
 .hero-logo {
-  height: 120px;       /* reduced from 270px */
+  height: 270px;
   width: auto;
   margin-bottom: 20px;
 }
 
 .footer-logo img {
-  height: 48px;        /* reduced from 108px */
+  height: 108px;
   width: auto;
   opacity: 0.85;
   margin-bottom: 10px;
 }
 
 .section-logo {
-  height: 80px;        /* consistent across pages */
+  height: 60px;
   width: auto;
-  margin: 40px auto 20px auto;
-  display: block;
-  opacity: 0.95;
+  margin-bottom: 20px;
+  opacity: 0.9;
 }
 
 .portfolio-watermark {
   position: absolute;
   top: 50%;
   left: 50%;
-  height: 260px;
+  height: 300px;
   width: auto;
   opacity: 0.05;
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
 
-/* -------------------------------------------------- */
-/* ANIMATIONS — GLOBAL, SCROLL-TRIGGERED              */
-/* -------------------------------------------------- */
-
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
-}
-
-.fade-in.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Keyframes for hero animation only */
-@keyframes fadeInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 /* -------------------------------------------------- */
-/* CARD COMPONENTS — FIXED HOVER ANIMATION            */
+/* NAVIGATION                                          */
+/* -------------------------------------------------- */
+
+nav {
+  background: var(--brand-dark);
+  padding: 18px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav a {
+  color: var(--brand-white);
+  margin: 0 18px;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: var(--font-display);
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: var(--brand-orange);
+}
+
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: var(--brand-orange);
+  transition: width 0.25s ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* -------------------------------------------------- */
+/* HEADER / HERO                                       */
+/* -------------------------------------------------- */
+
+header {
+  background: linear-gradient(135deg, var(--brand-dark), #1a1428);
+  color: var(--brand-white);
+  padding: 100px 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-family: var(--font-display);
+  font-size: 48px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+header p {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+/* -------------------------------------------------- */
+/* BUTTONS                                             */
+/* -------------------------------------------------- */
+
+.btn,
+button,
+.fs-button {
+  background: var(--brand-orange);
+  color: var(--brand-white);
+  padding: 14px 28px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: background 0.25s ease, transform 0.15s ease;
+}
+
+.btn:hover,
+button:hover,
+.fs-button:hover {
+  background: var(--brand-dark);
+  transform: translateY(-2px);
+}
+
+/* -------------------------------------------------- */
+/* CARD COMPONENTS                                     */
 /* -------------------------------------------------- */
 
 .card {
@@ -136,40 +204,164 @@ section {
 }
 
 .card:hover {
-  transform: translateY(-8px);
+  transform: translateY(-6px);
   box-shadow: var(--shadow-medium);
 }
 
 /* -------------------------------------------------- */
-/* BACKGROUND ACCENTS — FOR SERVICES PAGE             */
+/* CONTACT FORM (FORMSPREE)                            */
 /* -------------------------------------------------- */
 
-body {
-  position: relative;
-  overflow-x: hidden;
+.contact-container {
+  background: var(--brand-white);
+  padding: 40px;
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-soft);
 }
 
-.bg-accent {
-  position: absolute;
-  top: -80px;
-  right: -80px;
-  width: 260px;
-  height: 260px;
+.contact-container h2 {
+  font-family: var(--font-display);
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.contact-container p {
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* Formspree fields */
+.fs-form {
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+.fs-field {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.fs-label {
+  font-family: var(--font-display);
+  font-weight: 600;
+  color: var(--brand-dark);
+}
+
+.fs-input,
+.fs-textarea {
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  padding: 14px;
+  font-size: 16px;
+  background: #fafafa;
+  transition: border-color 0.2s ease, background 0.2s ease;
+}
+
+.fs-input:focus,
+.fs-textarea:focus {
+  border-color: var(--brand-orange);
+  background: var(--brand-white);
+  outline: none;
+}
+
+.fs-description {
+  color: #666;
+  font-size: 14px;
+}
+
+/* -------------------------------------------------- */
+/* FOOTER                                              */
+/* -------------------------------------------------- */
+
+footer {
+  background: var(--brand-dark);
+  color: var(--brand-white);
+  text-align: center;
+  padding: 30px 20px;
+  margin-top: 60px;
+  font-family: var(--font-display);
+  font-size: 16px;
+}
+
+/* -------------------------------------------------- */
+/* ANIMATIONS                                          */
+/* -------------------------------------------------- */
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* -------------------------------------------------- */
+/* METHODOLOGY DIAGRAM                                */
+/* -------------------------------------------------- */
+
+.methodology-diagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.method-step {
+  background: var(--brand-white);
+  border-radius: var(--radius-card);
+  padding: 25px;
+  width: 220px;
+  box-shadow: var(--shadow-soft);
+  text-align: center;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.method-step:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-medium);
+}
+
+.method-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.method-arrow {
+  font-size: 32px;
+  color: var(--brand-orange);
+  font-weight: bold;
+}
+
+/* -------------------------------------------------- */
+/* FLOATING CTA BUTTON                                 */
+/* -------------------------------------------------- */
+
+.floating-cta {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
   background: var(--brand-orange);
-  opacity: 0.12;
-  border-radius: 50%;
-  filter: blur(40px);
-  z-index: -1;
+  color: var(--brand-white);
+  padding: 14px 28px;
+  border-radius: var(--radius-pill);
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  transition: background 0.25s ease, transform 0.2s ease;
+  z-index: 999;
 }
 
-/* -------------------------------------------------- */
-/* SECTION DIVIDER                                    */
-/* -------------------------------------------------- */
-
-.section-divider {
-  height: 4px;
-  width: 80px;
-  background: var(--brand-teal);
-  margin: 40px auto 30px auto;
-  border-radius: 4px;
+.floating-cta:hover {
+  background: var(--brand-dark);
+  transform: translateY(-3px);
 }
