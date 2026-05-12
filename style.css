@@ -369,3 +369,14 @@ footer {
   background: var(--brand-dark);
   transform: translateY(-3px);
 }
+
+/* Right‑aligned special nav link */
+.nav-right {
+  margin-left: auto;
+  font-weight: 700;
+  color: var(--brand-orange);
+}
+
+.nav-right:hover {
+  color: var(--brand-white);
+}
