@@ -1,0 +1,102 @@
+/* -------------------------------------------------- */
+/* NDI PAGE SCOPING                                   */
+/* -------------------------------------------------- */
+/* All NDI-specific styling is safely isolated */
+body.ndi-page {
+  --ndi-dark: #0f1a24;
+  --ndi-accent: #1fa7a0;
+  --ndi-accent-light: #29c7bd;
+  --ndi-white: #ffffff;
+}
+
+/* -------------------------------------------------- */
+/* NDI LOGO OVERRIDE                                  */
+/* -------------------------------------------------- */
+body.ndi-page .nav-logo img {
+  content: url("Assets/logo2_white.png") !important;
+  height: 126px;
+  width: auto;
+  display: block;
+}
+
+/* Prevent global nav underline from affecting the logo */
+body.ndi-page .nav-logo::after {
+  display: none !important;
+  content: none !important;
+}
+
+body.ndi-page .nav-logo {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+/* -------------------------------------------------- */
+/* NDI NAVIGATION TWEAKS                              */
+/* -------------------------------------------------- */
+
+/* Optional: NDI-specific nav background */
+body.ndi-page nav {
+  background: var(--ndi-dark);
+}
+
+/* Optional: NDI-specific hover color */
+body.ndi-page nav a:hover {
+  color: var(--ndi-accent-light);
+}
+
+/* Keep the Glow Pulse accent pill but allow NDI tinting */
+body.ndi-page .nav-special {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--ndi-accent-light);
+}
+
+body.ndi-page .nav-special:hover {
+  background: var(--ndi-accent-light);
+  color: var(--ndi-dark);
+  box-shadow: 0 0 12px rgba(41, 199, 189, 0.6);
+}
+
+/* -------------------------------------------------- */
+/* NDI HEADER / HERO                                  */
+/* -------------------------------------------------- */
+
+body.ndi-page header {
+  background: linear-gradient(135deg, var(--ndi-dark), #0b141c);
+  color: var(--ndi-white);
+}
+
+/* -------------------------------------------------- */
+/* NDI ACCENT BARS                                    */
+/* -------------------------------------------------- */
+
+body.ndi-page .ndi-accent-bar {
+  height: 4px;
+  width: 80px;
+  background: var(--ndi-accent);
+  margin-bottom: 20px;
+}
+
+/* -------------------------------------------------- */
+/* NDI CTA BUTTONS                                    */
+/* -------------------------------------------------- */
+
+body.ndi-page .btn,
+body.ndi-page .floating-cta {
+  background: var(--ndi-accent);
+  color: var(--ndi-white);
+}
+
+body.ndi-page .btn:hover,
+body.ndi-page .floating-cta:hover {
+  background: var(--ndi-accent-light);
+  transform: translateY(-3px);
+}
+
+/* -------------------------------------------------- */
+/* NDI WATERMARK (optional)                           */
+/* -------------------------------------------------- */
+
+body.ndi-page .portfolio-watermark {
+  opacity: 0.04;
+  filter: hue-rotate(180deg) saturate(1.2);
+}
