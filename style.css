@@ -420,3 +420,23 @@ nav {
   background: var(--brand-orange);
   color: var(--brand-white);
 }
+
+/* Accent Pill + Glow Pulse Hover */
+.nav-special {
+  margin-left: auto;
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  font-weight: 700;
+  color: var(--brand-orange);
+  transition: 
+    background 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.nav-special:hover {
+  background: var(--brand-orange);
+  color: var(--brand-white);
+  box-shadow: 0 0 12px rgba(255, 140, 0, 0.6);
+}
