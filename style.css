@@ -380,3 +380,27 @@ footer {
 .nav-right:hover {
   color: var(--brand-white);
 }
+
+/* Navigation layout upgrade */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Group of main links */
+.nav-links {
+  display: flex;
+  gap: 18px;
+}
+
+/* Special right‑side link */
+.nav-special {
+  margin-left: auto;
+  font-weight: 700;
+  color: var(--brand-orange);
+}
+
+.nav-special:hover {
+  color: var(--brand-white);
+}
