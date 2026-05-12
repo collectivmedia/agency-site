@@ -3,28 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NDI Services</title>
+  <title>Data & Technology Services — NDI</title>
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Page‑specific logo override (safe, isolated) -->
+  <style>
+    body.ndi-page .nav-logo img {
+      content: url("Assets/logo2_white.png") !important;
+    }
+  </style>
 </head>
 
-<body>
+<body class="ndi-page">
 
   <!-- Navigation -->
-<nav>
-  <a href="NDIservices.html" class="nav-logo">
-    <img src="Assets/logo2_white.png" alt="NDI Services" />
-  </a>
+  <nav>
+    <!-- NDI Logo (overridden by CSS above) -->
+    <a href="NDIservices.html" class="nav-logo">
+      <img src="Assets/logo2_white.png" alt="NDI Services Logo" />
+    </a>
 
-  <div class="nav-links">
-    <a href="NDIservices.html">Home</a>
-    <a href="about.html">Privacy Consulting</a>
-    <a href="services.html">Security & Governance Consulting</a>
-    <a href="portfolio.html">Career Training</a>
-    <a href="contactNDI.html">Contact NDI</a>
-  </div>
+    <!-- Main navigation links -->
+    <div class="nav-links">
+      <a href="NDIservices.html">Home</a>
+      <a href="about.html">Privacy Consulting</a>
+      <a href="services.html">Security & Governance Consulting</a>
+      <a href="portfolio.html">Career Training</a>
+      <a href="contactNDI.html">Contact NDI</a>
+    </div>
 
-  <a href="index.html" class="nav-special">Content Services</a>
-</nav>
+    <!-- Special right‑side link (Glow Pulse accent pill) -->
+    <a href="index.html" class="nav-special">Content Services</a>
+  </nav>
 
   <!-- HERO -->
   <header>
@@ -39,7 +49,7 @@
       Smarter Data. Stronger Decisions.
     </h2>
     <p style="max-width: 800px;">
-      Collectiv Media’s Data Management Services help organizations organize, structure, and leverage their data 
+      Collectiv Media’s Data & Technology Services help organizations organize, structure, and leverage their data 
       to improve decision‑making, streamline operations, and unlock new opportunities. Whether you're building 
       a content ecosystem, managing digital assets, or optimizing workflows, our data solutions ensure clarity, 
       consistency, and long‑term scalability.
@@ -96,8 +106,7 @@
         <p>
           Ensure accuracy, consistency, and reliability across your data systems. We help you establish standards, 
           governance models, and long‑term maintenance plans while designing clean, scalable data structures that 
-          support your content, workflows, and digital systems. From taxonomy to metadata frameworks, we ensure 
-          your information is organized and future‑ready.
+          support your content, workflows, and digital systems.
         </p>
       </div>
 
@@ -151,47 +160,46 @@
   </section>
 
   <!-- METHODOLOGY DIAGRAM -->
-<section class="fade-in" style="margin-top: 80px; text-align: center;">
-  <div style="height: 4px; width: 80px; background: var(--brand-orange); margin: 0 auto 20px auto;"></div>
+  <section class="fade-in" style="margin-top: 80px; text-align: center;">
+    <div style="height: 4px; width: 80px; background: var(--brand-orange); margin: 0 auto 20px auto;"></div>
 
-  <h2 style="font-family: var(--font-display); font-size: 32px; margin-bottom: 30px;">
-    Our Data Management Methodology
-  </h2>
+    <h2 style="font-family: var(--font-display); font-size: 32px; margin-bottom: 30px;">
+      Our Data Management Methodology
+    </h2>
 
-  <div class="methodology-diagram">
-    <div class="method-step">
-      <div class="method-icon">🔍</div>
-      <h3>Assess</h3>
-      <p>We evaluate your current data ecosystem, workflows, and governance maturity.</p>
+    <div class="methodology-diagram">
+      <div class="method-step">
+        <div class="method-icon">🔍</div>
+        <h3>Assess</h3>
+        <p>We evaluate your current data ecosystem, workflows, and governance maturity.</p>
+      </div>
+
+      <div class="method-arrow">➜</div>
+
+      <div class="method-step">
+        <div class="method-icon">🧩</div>
+        <h3>Architect</h3>
+        <p>We design scalable structures, taxonomies, and governance frameworks.</p>
+      </div>
+
+      <div class="method-arrow">➜</div>
+
+      <div class="method-step">
+        <div class="method-icon">⚙️</div>
+        <h3>Implement</h3>
+        <p>We deploy systems, workflows, and integrations that support your data strategy.</p>
+      </div>
+
+      <div class="method-arrow">➜</div>
+
+      <div class="method-step">
+        <div class="method-icon">📈</div>
+        <h3>Optimize</h3>
+        <p>We monitor performance and continuously refine your data ecosystem.</p>
+      </div>
     </div>
+  </section>
 
-    <div class="method-arrow">➜</div>
-
-    <div class="method-step">
-      <div class="method-icon">🧩</div>
-      <h3>Architect</h3>
-      <p>We design scalable structures, taxonomies, and governance frameworks.</p>
-    </div>
-
-    <div class="method-arrow">➜</div>
-
-    <div class="method-step">
-      <div class="method-icon">⚙️</div>
-      <h3>Implement</h3>
-      <p>We deploy systems, workflows, and integrations that support your data strategy.</p>
-    </div>
-
-    <div class="method-arrow">➜</div>
-
-    <div class="method-step">
-      <div class="method-icon">📈</div>
-      <h3>Optimize</h3>
-      <p>We monitor performance and continuously refine your data ecosystem.</p>
-    </div>
-  </div>
-</section>
-
-  
   <!-- CTA -->
   <section class="fade-in" style="text-align: center;">
     <div style="height: 4px; width: 80px; background: var(--brand-yellow); margin-bottom: 20px;"></div>
@@ -199,7 +207,7 @@
     <h2 style="font-family: var(--font-display); font-size: 32px; margin-bottom: 20px;">
       Ready to Transform Your Data?
     </h2>
-    <a href="contact.html" class="btn">Start a Project</a>
+    <a href="contactNDI.html" class="btn">Start a Project</a>
   </section>
 
   <!-- FOOTER -->
@@ -208,8 +216,7 @@
   </footer>
 
   <!-- FLOATING CTA BUTTON -->
-<a href="contact.html" class="floating-cta">Start a Project</a>
+  <a href="contactNDI.html" class="floating-cta">Start a Project</a>
 
-  
 </body>
 </html>
