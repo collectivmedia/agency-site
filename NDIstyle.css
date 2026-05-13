@@ -118,35 +118,31 @@ body.ndi-page .floating-cta:hover {
 /* NDI WATERMARK (optional)                           */
 /* -------------------------------------------------- */
 
+/* Global NDI watermark overlay */
 body.ndi-page .contact-container {
   position: relative;
-  background-image: url("Assets/ndi-logo-icon.svg");
-  background-repeat: no-repeat;
-  background-size: 1100px; /* bigger */
-  background-position: right -40px top 100px; /* lower */
-  background-attachment: scroll;
+  z-index: 1;
 }
 
-/* Watermark opacity layer */
 body.ndi-page .contact-container::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: inherit;
-  background-repeat: inherit;
-  background-size: inherit;
-  background-position: inherit;
-  background-attachment: inherit;
-  opacity: 0.9; /* <-- adjust this to taste */
+  background-image: url("Assets/ndi-logo-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 1200px; /* bigger */
+  background-position: right -40px top 420px; /* lower */
+  opacity: 0.12; /* THIS NOW WORKS */
   pointer-events: none;
   z-index: 0;
 }
 
-/* Ensure content sits above the watermark */
+/* Ensure all content sits above the watermark */
 body.ndi-page .contact-container > * {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
+
 
 
 /* -------------------------------------------------- */
