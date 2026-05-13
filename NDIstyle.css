@@ -343,43 +343,48 @@ body.ndi-page footer .ndi-footer-logo {
 /* -------------------------------------------------- */
 /* Accordion                                           */
 /* -------------------------------------------------- */
+
 .accordion {
   margin-bottom: 40px;
 }
 
+/* Each item container */
 .accordion-item {
-  border: 1px solid rgba(255,255,255,0.15);
+  border: 1px solid rgba(31,167,160,0.5);
   border-radius: 8px;
   margin-bottom: 12px;
   overflow: hidden;
-  background: rgba(255,255,255,0.05);
-  backdrop-filter: blur(4px);
+  background: #0f1a24; /* solid NDI dark for contrast */
 }
 
+/* Header (job title) */
 .accordion-header {
   width: 100%;
   text-align: left;
-  background: rgba(255,255,255,0.08);
+  background: #12202c; /* slightly lighter than var(--ndi-dark) */
   padding: 14px 18px;
   font-size: 18px;
   font-weight: 600;
-  color: white;
+  color: #ffffff;
   border: none;
   cursor: pointer;
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease;
 }
 
 .accordion-header:hover {
-  background: rgba(41,199,189,0.15);
+  background: #163040;
 }
 
+/* Body (description) */
 .accordion-body {
   padding: 16px 18px;
   display: none;
-  color: rgba(255,255,255,0.85);
+  color: rgba(255,255,255,0.9);
   line-height: 1.5;
+  background: #0b151e;
 }
 
+/* When active, show body */
 .accordion-item.active .accordion-body {
   display: block;
 }
