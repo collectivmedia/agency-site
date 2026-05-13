@@ -127,3 +127,81 @@ body.ndi-page footer .ndi-footer-logo {
   width: auto;
   display: block;
 }
+
+/* -------------------------------------------------- */
+/* BOOKLET LAYOUT                                     */
+/* -------------------------------------------------- */
+
+.ndi-booklets {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  padding: 60px 20px;
+  flex-wrap: wrap;
+}
+
+.booklet {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 30px;
+  width: 420px;
+  border-radius: 12px;
+  position: relative;
+  backdrop-filter: blur(6px);
+}
+
+.booklet-title {
+  font-family: var(--font-display);
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* PAGES */
+.booklet-pages {
+  position: relative;
+  height: 260px;
+  overflow: hidden;
+}
+
+.page {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(40px);
+  transition: all 0.35s ease;
+}
+
+.page.active {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.page-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+/* CONTROLS */
+.booklet-controls {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.booklet-controls button {
+  background: var(--ndi-accent);
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.booklet-controls button:hover {
+  background: var(--ndi-accent-light);
+}
