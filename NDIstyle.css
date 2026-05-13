@@ -256,6 +256,7 @@ body.ndi-page footer .ndi-footer-logo {
 /* Career Pathway Diagram                             */
 /* -------------------------------------------------- */
 
+/* Career Pathway Diagram — Enhanced Circuit Background + Animation */
 .career-pathway {
   display: flex;
   align-items: center;
@@ -270,28 +271,54 @@ body.ndi-page footer .ndi-footer-logo {
   /* Solid NDI dark background for contrast */
   background: #0f1a24;
 
-  /* Circuit board pattern */
+  /* Lighter circuit board pattern */
   background-image:
-    linear-gradient(90deg, rgba(31,167,160,0.25) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(31,167,160,0.25) 1px, transparent 1px),
-    radial-gradient(circle at 12px 12px, rgba(31,167,160,0.35) 3px, transparent 0);
+    linear-gradient(90deg, rgba(41,199,189,0.45) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(41,199,189,0.45) 1px, transparent 1px),
+    radial-gradient(circle at 12px 12px, rgba(41,199,189,0.55) 3px, transparent 0);
   background-size: 40px 40px, 40px 40px, 80px 80px;
   background-blend-mode: overlay;
 
-  border: 1px solid rgba(31,167,160,0.55);
-  box-shadow: 0 0 22px rgba(31,167,160,0.35);
+  border: 1px solid rgba(41,199,189,0.65);
+  box-shadow: 0 0 22px rgba(41,199,189,0.35);
+
+  /* Animated circuit trace overlay */
+  overflow: hidden;
+}
+
+.career-pathway::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -200%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(41,199,189,0.25) 50%,
+    transparent 100%
+  );
+  animation: circuit-sweep 6s linear infinite;
+  pointer-events: none;
+  opacity: 0.4;
+}
+
+@keyframes circuit-sweep {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(100%); }
 }
 
 /* Corner nodes */
 .career-pathway::before,
-.career-pathway::after {
+.career-pathway .corner-node {
   content: "";
   position: absolute;
   width: 14px;
   height: 14px;
   border-radius: 4px;
   background: var(--ndi-accent);
-  box-shadow: 0 0 10px rgba(31,167,160,0.7);
+  box-shadow: 0 0 12px rgba(41,199,189,0.8);
 }
 
 .career-pathway::before {
@@ -299,33 +326,35 @@ body.ndi-page footer .ndi-footer-logo {
   left: 14px;
 }
 
-.career-pathway::after {
+.career-pathway .corner-node {
   bottom: 14px;
   right: 14px;
 }
 
 /* Path steps */
 .path-step {
-  background: #12202c; /* same tone as accordion headers */
-  border: 1px solid rgba(31,167,160,0.55);
+  background: #12202c;
+  border: 1px solid rgba(41,199,189,0.65);
   padding: 12px 20px;
   border-radius: 8px;
   font-weight: 600;
   color: #ffffff;
   backdrop-filter: blur(4px);
-  transition: background 0.2s ease;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
 }
 
 .path-step:hover {
   background: #163040;
+  box-shadow: 0 0 12px rgba(41,199,189,0.4);
 }
 
 /* Arrows */
 .path-arrow {
   font-size: 24px;
-  opacity: 0.8;
-  color: rgba(255,255,255,0.85);
+  opacity: 0.9;
+  color: rgba(255,255,255,0.9);
 }
+
 
 
 /* -------------------------------------------------- */
