@@ -78,35 +78,60 @@
 
       <!-- SECTION 2: PRIVACY JOB TITLES -->
       <h2 style="font-family: var(--font-display); font-size: 32px; margin-bottom: 10px;">
-        Privacy Career Paths
-      </h2>
+  Privacy Career Paths
+</h2>
 
-      <p style="margin-bottom: 25px;">
-        The privacy field is growing rapidly, with opportunities across industries. Below are common roles and their
-        responsibilities to help you understand potential career paths.
-      </p>
+<p style="margin-bottom: 25px;">
+  The privacy field is growing rapidly, with opportunities across industries. Below are common roles and their
+  responsibilities to help you understand potential career paths.
+</p>
 
-      <div class="card" style="margin-bottom: 40px;">
+<div class="accordion">
 
-        <p><strong>🛡 Privacy Analyst</strong><br>
-        Supports privacy operations, conducts assessments, and monitors compliance activities.</p>
+  <div class="accordion-item">
+    <button class="accordion-header">Privacy Analyst</button>
+    <div class="accordion-body">
+      Supports privacy operations, conducts assessments, and monitors compliance activities.
+    </div>
+  </div>
 
-        <p><strong>📘 Privacy Program Manager</strong><br>
-        Oversees privacy initiatives, manages policies, and coordinates cross‑functional compliance efforts.</p>
+  <div class="accordion-item">
+    <button class="accordion-header">Privacy Program Manager</button>
+    <div class="accordion-body">
+      Oversees privacy initiatives, manages policies, and coordinates cross‑functional compliance efforts.
+    </div>
+  </div>
 
-        <p><strong>🔍 Data Protection Officer (DPO)</strong><br>
-        Ensures regulatory compliance, manages risk, and serves as the point of contact for regulators.</p>
+  <div class="accordion-item">
+    <button class="accordion-header">Data Protection Officer (DPO)</button>
+    <div class="accordion-body">
+      Ensures regulatory compliance, manages risk, and serves as the point of contact for regulators.
+    </div>
+  </div>
 
-        <p><strong>📑 Privacy Counsel</strong><br>
-        Provides legal guidance on data protection laws, contracts, and regulatory obligations.</p>
+  <div class="accordion-item">
+    <button class="accordion-header">Privacy Counsel</button>
+    <div class="accordion-body">
+      Provides legal guidance on data protection laws, contracts, and regulatory obligations.
+    </div>
+  </div>
 
-        <p><strong>🧭 Governance & Risk Specialist</strong><br>
-        Focuses on data governance, risk assessments, and operational controls.</p>
+  <div class="accordion-item">
+    <button class="accordion-header">Governance & Risk Specialist</button>
+    <div class="accordion-body">
+      Focuses on data governance, risk assessments, and operational controls.
+    </div>
+  </div>
 
-        <p><strong>🤖 AI Privacy & Security Specialist</strong><br>
-        Addresses privacy risks in AI systems, including LLMs, model training data, and automated decision‑making.</p>
+  <div class="accordion-item">
+    <button class="accordion-header">AI Privacy & Security Specialist</button>
+    <div class="accordion-body">
+      Addresses privacy risks in AI systems, including LLMs, model training data, and automated decision‑making.
+    </div>
+  </div>
 
-      </div>
+</div>
+
 
 
       <!-- SECTION 3: TRAINING VIDEO PLACEHOLDER -->
@@ -167,6 +192,15 @@
   </footer>
 
   <a href="contactNDI.html" class="floating-cta-ndi">Contact NDI</a>
+
+  <script>
+document.querySelectorAll('.accordion-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const item = header.parentElement;
+    item.classList.toggle('active');
+  });
+});
+</script>
 
 </body>
 </html>
