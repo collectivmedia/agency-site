@@ -101,28 +101,23 @@ body.ndi-page .portfolio-watermark {
   filter: hue-rotate(180deg) saturate(1.2);
 }
 
-/* NDI Footer — Logo inline to the left of centered text */
-body.ndi-page footer {
+/* NDI footer: logo directly left of centered text */
+body.ndi-page .ndi-footer {
   background: #0F0B1A; /* NDI dark */
   color: white;
   padding: 40px 20px;
+}
+
+body.ndi-page .ndi-footer-inner {
   display: flex;
   justify-content: center;   /* centers logo + text as a group */
   align-items: center;       /* vertical alignment */
-  gap: 20px;                 /* space between logo and text */
-  position: relative;
+  gap: 16px;                 /* space between logo and text */
   text-align: center;
 }
 
-/* Inline logo as actual image (no cropping) */
-body.ndi-page footer::before {
-  content: "";
-  display: inline-block;
-  background-image: url("Assets/ndi-logo-light.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 120px;      /* natural width */
-  height: 60px;      /* natural height */
-  vertical-align: middle; /* aligns with text baseline */
+body.ndi-page .ndi-footer-logo {
+  height: 40px;
+  width: auto;
+  display: block;
 }
-
