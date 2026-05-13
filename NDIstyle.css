@@ -122,7 +122,7 @@ body.ndi-page footer::before {
   background-repeat: no-repeat;
   background-size: contain;
   width: 120px;      /* natural width */
-  height: 40px;      /* natural height */
+  height: 44px;      /* natural height */
   vertical-align: middle; /* aligns with text baseline */
 }
 
