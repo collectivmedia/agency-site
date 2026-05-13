@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — NDI Services</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Background Accent -->
+  <div class="bg-accent"></div>
+
+  <!-- Navigation -->
+<nav>
+  <a href="NDIservices.html" class="nav-logo">
+    <img src="Assets/ndi-logo-light.svg" alt="NDI Services" />
+  </a>
+
+  <div class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <a href="NDIservices.html" class="nav-special">Data & Technology Services</a>
+</nav>
+
+
+
+  <!-- HERO -->
+  <header>
+    <h1>Contact Us</h1>
+    <p>Take the first step in your data transformation.</p>
+  </header>
+
+  <!-- CONTACT SECTION -->
+  <section style="position: relative;">
+
+    <!-- Watermark -->
+    <img src="Assets/ndi-logo-icon.svg" alt="Watermark" class="portfolio-watermark" />
+
+    <div class="contact-container">
+      <h2 style="font-family: var(--font-display); font-size: 32px; margin-bottom: 10px;">
+        Get in Touch
+      </h2>
+      <p style="margin-bottom: 25px;">
+        Fill out the form below and we’ll get back to you shortly.
+      </p>
+
+      <!-- Success Message -->
+      <div id="success-message" class="success-message" style="display:none;">
+        <strong>Message sent!</strong> Thanks for reaching out — we’ll respond soon.
+      </div>
+
+      <!-- FORMSPREE FORM -->
+      <form
+        action="https://formspree.io/f/{FORM_ID}"
+        class="fs-form"
+        target="_top"
+        method="POST"
+      >
+        <div class="fs-field">
+          <label class="fs-label" for="name">Your Name</label>
+          <input class="fs-input" id="name" name="name" required />
+        </div>
+
+        <div class="fs-field">
+          <label class="fs-label" for="email">Email</label>
+          <input class="fs-input" id="email" name="email" required />
+          <p class="fs-description">
+            This will help us respond to your message.
+          </p>
+        </div>
+
+        <div class="fs-field">
+          <label class="fs-label" for="message">Message</label>
+          <textarea
+            class="fs-textarea"
+            id="message"
+            name="message"
+            required
+          ></textarea>
+          <p class="fs-description">Tell us what you’d like to discuss.</p>
+        </div>
+
+        <div class="fs-button-group">
+          <button class="fs-button" type="submit">Send Message</button>
+        </div>
+      </form>
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-logo">
+      <img src="Assets/ndi-logo-light.svg" alt="Collectiv Media Logo" />
+    </div>
+    © 2026 NDI Services of Collectiv Media — All Rights Reserved
+  </footer>
+
+  <script>
+    // Show success message if ?sent=1
+    const params = new URLSearchParams(window.location.search);
+    if (params.get("sent") === "1") {
+      document.getElementById("success-message").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
