@@ -150,11 +150,18 @@ body.ndi-page footer .ndi-footer-logo {
   position: relative;
   backdrop-filter: blur(6px);
   transition: box-shadow 0.3s ease, border-color 0.3s ease;
+
+  /* ⭐ Subtle circuit-board pattern */
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(31,167,160,0.18) 1px, transparent 0),
+    radial-gradient(circle at 1px 1px, rgba(31,167,160,0.10) 1px, transparent 0);
+  background-size: 40px 40px, 80px 80px;
+  background-blend-mode: overlay;
 }
 
-/* hover effect for extra polish */
+/* Optional hover polish */
 .booklet:hover {
-  border-color: rgba(41, 199, 189, 0.55); /* lighter accent */
+  border-color: rgba(41, 199, 189, 0.55);
   box-shadow: 0 0 26px rgba(41, 199, 189, 0.35);
 }
 
