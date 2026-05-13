@@ -7,6 +7,13 @@
 
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="NDIstyle.css" />
+
+      <!-- Page‑specific logo override (safe, isolated) -->
+  <style>
+    body.ndi-page .nav-logo img {
+      content: url("Assets/ndi-logo-light.svg") !important;
+    }
+  </style>
 </head>
 
 <body class="ndi-page">
@@ -115,8 +122,22 @@
       <div class="card" style="margin-bottom: 40px; text-align:center; padding: 40px;">
         <p style="opacity: 0.7;">🎥 Video training library launching soon</p>
         <p style="opacity: 0.5;">(Subscriber‑only content)</p>
-      </div>
 
+      </div>
+      
+<div class="card" style="margin-bottom: 40px; text-align:center; padding: 40px;">
+      <h3 style="font-family: var(--font-display); margin-top: 40px;">Career Pathway</h3>
+
+<div class="career-pathway">
+  <div class="path-step">Privacy Analyst</div>
+  <div class="path-arrow">→</div>
+  <div class="path-step">Privacy Program Manager</div>
+  <div class="path-arrow">→</div>
+  <div class="path-step">Data Protection Officer</div>
+  <div class="path-arrow">→</div>
+  <div class="path-step">AI Privacy & Security Specialist</div>
+</div>
+</div>
 
       <!-- SECTION 4: RSS FEED -->
       <h2 style="font-family: var(--font-display); font-size: 32px; margin-bottom: 10px;">
@@ -144,6 +165,8 @@
       <span>© 2026 NDI Services of Collectiv Media — All Rights Reserved</span>
     </div>
   </footer>
+
+  <a href="contactNDI.html" class="floating-cta-ndi">Contact NDI</a>
 
 </body>
 </html>
