@@ -142,12 +142,20 @@ body.ndi-page footer .ndi-footer-logo {
 
 .booklet {
   background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
+  border: 1px solid rgba(31, 167, 160, 0.35); /* NDI accent tint */
+  box-shadow: 0 0 18px rgba(31, 167, 160, 0.25); /* soft aqua glow */
   padding: 30px;
   width: 420px;
-  border-radius: 12px;
+  border-radius: 14px;
   position: relative;
   backdrop-filter: blur(6px);
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+/* hover effect for extra polish */
+.booklet:hover {
+  border-color: rgba(41, 199, 189, 0.55); /* lighter accent */
+  box-shadow: 0 0 26px rgba(41, 199, 189, 0.35);
 }
 
 .booklet-title {
