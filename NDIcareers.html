@@ -1,77 +1,163 @@
-<!-- MAIN CONTENT -->
-<section style="position: relative;">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Security & Governance Consulting — NDI Services</title>
 
-  <!-- Watermark -->
-  <img src="Assets/ndi-logo-icon.svg" alt="Watermark" class="portfolio-watermark" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="NDIstyle.css" />
+</head>
 
-  <div class="contact-container">
+<body class="ndi-page">
 
-    <!-- BLOCK 1 — DATA GOVERNANCE -->
-    <h2 style="font-family: var(--font-display); font-size: 32px; margin-bottom: 10px;">
-      Data Governance
-    </h2>
+  <!-- Navigation -->
+  <nav>
+    <a href="NDIservices.html" class="nav-logo">
+      <img src="Assets/ndi-logo-light.svg" alt="NDI Services Logo" />
+    </a>
 
-    <p style="margin-bottom: 25px;">
-      NDI helps organizations build strong, scalable governance programs that ensure data is accurate,
-      trustworthy, compliant, and aligned with organizational goals.
-    </p>
+    <div class="nav-links">
+      <a href="NDIservices.html">Home</a>
+      <a href="NDIprivacy.html">Privacy Consulting</a>
+      <a href="NDIgovernance.html">Security & Governance Consulting</a>
+      <a href="NDIcareers.html">Career Training</a>
+      <a href="contactNDI.html">Contact NDI</a>
+    </div>
 
-    <div class="card" style="margin-bottom: 60px;">
+    <a href="NDIservices.html" class="nav-special">Data & Technology Services</a>
+  </nav>
 
-      <p><strong>📘 Governance Frameworks</strong><br>
-      Establish clear ownership, accountability, and decision‑making structures across your data ecosystem.</p>
+  <!-- HERO -->
+  <header>
+    <h1>Security & Governance Consulting</h1>
+    <p>Building resilient, compliant, and AI‑ready data ecosystems.</p>
+  </header>
 
-      <p><strong>🧭 Stewardship Programs</strong><br>
-      Define stewardship roles, responsibilities, and workflows that maintain data quality and consistency.</p>
+  <!-- MAIN CONTENT -->
+  <section class="ndi-booklets">
 
-      <p><strong>📑 Policy Creation & Enforcement</strong><br>
-      Create and operationalize policies for access, retention, classification, and lifecycle management.</p>
+  <!-- DATA GOVERNANCE BOOKLET -->
+  <div class="booklet">
+    <h2 class="booklet-title">Data Governance</h2>
 
-      <p><strong>🔍 Data Quality Controls</strong><br>
-      Implement validation, monitoring, and remediation processes that keep your data reliable.</p>
+    <div class="booklet-pages" data-booklet="governance">
 
-      <p><strong>🛡 Security Architecture Alignment</strong><br>
-      Ensure governance and security work together to reduce risk and strengthen resilience.</p>
+      <div class="page active">
+        <div class="page-icon">📘</div>
+        <h3>Governance Frameworks</h3>
+        <p>Establish clear ownership, accountability, and decision‑making structures across your data ecosystem.</p>
+      </div>
+
+      <div class="page">
+        <div class="page-icon">🧭</div>
+        <h3>Stewardship Programs</h3>
+        <p>Define stewardship roles, responsibilities, and workflows that maintain data quality and consistency.</p>
+      </div>
+
+      <div class="page">
+        <div class="page-icon">📑</div>
+        <h3>Policy Creation & Enforcement</h3>
+        <p>Create and operationalize policies for access, retention, classification, and lifecycle management.</p>
+      </div>
+
+      <div class="page">
+        <div class="page-icon">🔍</div>
+        <h3>Data Quality Controls</h3>
+        <p>Implement validation, monitoring, and remediation processes that keep your data reliable.</p>
+      </div>
+
+      <div class="page">
+        <div class="page-icon">🛡</div>
+        <h3>Security Architecture Alignment</h3>
+        <p>Ensure governance and security work together to reduce risk and strengthen resilience.</p>
+      </div>
 
     </div>
 
-    <!-- BLOCK 2 — AI SECURITY & GOVERNANCE -->
-    <h2 style="font-family: var(--font-display); font-size: 32px; margin-bottom: 10px;">
-      AI Security & Governance
-    </h2>
+    <div class="booklet-controls">
+      <button class="prev" data-target="governance">‹</button>
+      <button class="next" data-target="governance">›</button>
+    </div>
+  </div>
 
-    <p style="margin-bottom: 25px;">
-      As AI and LLMs reshape the digital landscape, NDI helps organizations adopt these technologies responsibly,
-      securely, and with strong governance guardrails.
-    </p>
 
-    <div class="card" style="margin-bottom: 60px;">
 
-      <p><strong>🤖 AI Governance Frameworks</strong><br>
-      Define policies, controls, and oversight structures for AI systems across their lifecycle.</p>
+  <!-- AI SECURITY & GOVERNANCE BOOKLET -->
+  <div class="booklet">
+    <h2 class="booklet-title">AI Security & Governance</h2>
 
-      <p><strong>🔐 AI Security & Threat Modeling</strong><br>
-      Address risks such as prompt injection, model poisoning, data leakage, and unauthorized model access.</p>
+    <div class="booklet-pages" data-booklet="ai">
 
-      <p><strong>🧠 LLM Risk Management</strong><br>
-      Manage hallucinations, bias, over‑reliance, and uncontrolled data exposure in large language models.</p>
+      <div class="page active">
+        <div class="page-icon">🤖</div>
+        <h3>AI Governance Frameworks</h3>
+        <p>Define policies, controls, and oversight structures for AI systems across their lifecycle.</p>
+      </div>
 
-      <p><strong>🛠 Responsible AI Operations (RAIO)</strong><br>
-      Implement monitoring, auditing, and continuous evaluation to ensure AI behaves as intended.</p>
+      <div class="page">
+        <div class="page-icon">🔐</div>
+        <h3>AI Security & Threat Modeling</h3>
+        <p>Address risks such as prompt injection, model poisoning, data leakage, and unauthorized model access.</p>
+      </div>
 
-      <p><strong>🚀 AI Enablement & Adoption</strong><br>
-      NDI specializes in <em>facilitating organizations with using AI to its fullest capabilities, but doing so securely</em>.
-      We help teams adopt AI confidently while maintaining strong governance boundaries.</p>
+      <div class="page">
+        <div class="page-icon">🧠</div>
+        <h3>LLM Risk Management</h3>
+        <p>Manage hallucinations, bias, over‑reliance, and uncontrolled data exposure in large language models.</p>
+      </div>
+
+      <div class="page">
+        <div class="page-icon">🛠</div>
+        <h3>Responsible AI Operations (RAIO)</h3>
+        <p>Implement monitoring, auditing, and continuous evaluation to ensure AI behaves as intended.</p>
+      </div>
+
+      <div class="page">
+        <div class="page-icon">🚀</div>
+        <h3>AI Enablement & Adoption</h3>
+        <p>NDI specializes in <em>facilitating organizations with using AI to its fullest capabilities, but doing so securely</em>.</p>
+      </div>
 
     </div>
 
-    <h2 style="font-family: var(--font-display); font-size: 28px; margin-bottom: 10px;">
-      Ready to Strengthen Your Governance Program?
-    </h2>
-
-    <a href="contactNDI.html" class="btn">Contact NDI</a>
-
+    <div class="booklet-controls">
+      <button class="prev" data-target="ai">‹</button>
+      <button class="next" data-target="ai">›</button>
+    </div>
   </div>
 
 </section>
 
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="ndi-footer-inner">
+      <img src="Assets/ndi-logo-light.svg" class="ndi-footer-logo" alt="NDI Logo">
+      <span>© 2026 NDI Services of Collectiv Media — All Rights Reserved</span>
+    </div>
+  </footer>
+
+<!-- BOOKLET SCRIPT -->
+  <script>
+document.querySelectorAll('.booklet-controls button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = btn.dataset.target;
+    const pages = document.querySelectorAll(`.booklet-pages[data-booklet="${target}"] .page`);
+    let index = [...pages].findIndex(p => p.classList.contains('active'));
+
+    pages[index].classList.remove('active');
+
+    if (btn.classList.contains('next')) {
+      index = (index + 1) % pages.length;
+    } else {
+      index = (index - 1 + pages.length) % pages.length;
+    }
+
+    pages[index].classList.add('active');
+  });
+});
+</script>
+
+</body>
+</html>
