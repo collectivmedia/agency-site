@@ -278,3 +278,108 @@ body.ndi-page footer .ndi-footer-logo {
   font-size: 24px;
   opacity: 0.6;
 }
+
+/* Career Pathway Diagram — Enhanced Circuit Background */
+.career-pathway {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+  padding: 30px;
+  border-radius: 14px;
+  position: relative;
+
+  /* Circuit board pattern */
+  background:
+    linear-gradient(90deg, rgba(31,167,160,0.15) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(31,167,160,0.15) 1px, transparent 1px),
+    radial-gradient(circle at 12px 12px, rgba(31,167,160,0.25) 3px, transparent 0);
+  background-size: 40px 40px, 40px 40px, 80px 80px;
+  background-blend-mode: overlay;
+  border: 1px solid rgba(31,167,160,0.35);
+  box-shadow: 0 0 18px rgba(31,167,160,0.25);
+}
+
+/* Corner nodes */
+.career-pathway::before,
+.career-pathway::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background: var(--ndi-accent);
+  box-shadow: 0 0 10px rgba(31,167,160,0.6);
+}
+
+.career-pathway::before {
+  top: 12px;
+  left: 12px;
+}
+
+.career-pathway::after {
+  bottom: 12px;
+  right: 12px;
+}
+
+/* Path steps */
+.path-step {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(31,167,160,0.35);
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  backdrop-filter: blur(4px);
+}
+
+.path-arrow {
+  font-size: 24px;
+  opacity: 0.6;
+}
+
+
+/* -------------------------------------------------- */
+/* Accordion                                           */
+/* -------------------------------------------------- */
+.accordion {
+  margin-bottom: 40px;
+}
+
+.accordion-item {
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(4px);
+}
+
+.accordion-header {
+  width: 100%;
+  text-align: left;
+  background: rgba(255,255,255,0.08);
+  padding: 14px 18px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.accordion-header:hover {
+  background: rgba(41,199,189,0.15);
+}
+
+.accordion-body {
+  padding: 16px 18px;
+  display: none;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.5;
+}
+
+.accordion-item.active .accordion-body {
+  display: block;
+}
