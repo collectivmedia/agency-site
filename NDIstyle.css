@@ -118,11 +118,11 @@ body.ndi-page footer {
 body.ndi-page footer::before {
   content: "";
   display: inline-block;
-  background-image: url("Assets/ndi-logo-light.svg");
+  background-image: url("Assets/ndi-logo-light.png");
   background-repeat: no-repeat;
   background-size: contain;
   width: 120px;      /* natural width */
-  height: 240px;      /* natural height */
+  height: 44px;      /* natural height */
   vertical-align: middle; /* aligns with text baseline */
 }
 
