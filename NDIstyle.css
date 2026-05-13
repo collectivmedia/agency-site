@@ -263,43 +263,23 @@ body.ndi-page footer .ndi-footer-logo {
   gap: 14px;
   margin: 30px 0;
   flex-wrap: wrap;
-}
-
-.path-step {
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(31,167,160,0.35);
-  padding: 12px 20px;
-  border-radius: 8px;
-  font-weight: 600;
-  backdrop-filter: blur(4px);
-}
-
-.path-arrow {
-  font-size: 24px;
-  opacity: 0.6;
-}
-
-/* Career Pathway Diagram — Enhanced Circuit Background */
-.career-pathway {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
-  margin: 30px 0;
-  flex-wrap: wrap;
-  padding: 30px;
-  border-radius: 14px;
+  padding: 40px;
+  border-radius: 12px;
   position: relative;
 
+  /* Solid NDI dark background for contrast */
+  background: #0f1a24;
+
   /* Circuit board pattern */
-  background:
-    linear-gradient(90deg, rgba(31,167,160,0.15) 1px, transparent 1px),
-    linear-gradient(0deg, rgba(31,167,160,0.15) 1px, transparent 1px),
-    radial-gradient(circle at 12px 12px, rgba(31,167,160,0.25) 3px, transparent 0);
+  background-image:
+    linear-gradient(90deg, rgba(31,167,160,0.25) 1px, transparent 1px),
+    linear-gradient(0deg, rgba(31,167,160,0.25) 1px, transparent 1px),
+    radial-gradient(circle at 12px 12px, rgba(31,167,160,0.35) 3px, transparent 0);
   background-size: 40px 40px, 40px 40px, 80px 80px;
   background-blend-mode: overlay;
-  border: 1px solid rgba(31,167,160,0.35);
-  box-shadow: 0 0 18px rgba(31,167,160,0.25);
+
+  border: 1px solid rgba(31,167,160,0.55);
+  box-shadow: 0 0 22px rgba(31,167,160,0.35);
 }
 
 /* Corner nodes */
@@ -311,32 +291,40 @@ body.ndi-page footer .ndi-footer-logo {
   height: 14px;
   border-radius: 4px;
   background: var(--ndi-accent);
-  box-shadow: 0 0 10px rgba(31,167,160,0.6);
+  box-shadow: 0 0 10px rgba(31,167,160,0.7);
 }
 
 .career-pathway::before {
-  top: 12px;
-  left: 12px;
+  top: 14px;
+  left: 14px;
 }
 
 .career-pathway::after {
-  bottom: 12px;
-  right: 12px;
+  bottom: 14px;
+  right: 14px;
 }
 
 /* Path steps */
 .path-step {
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(31,167,160,0.35);
+  background: #12202c; /* same tone as accordion headers */
+  border: 1px solid rgba(31,167,160,0.55);
   padding: 12px 20px;
   border-radius: 8px;
   font-weight: 600;
+  color: #ffffff;
   backdrop-filter: blur(4px);
+  transition: background 0.2s ease;
 }
 
+.path-step:hover {
+  background: #163040;
+}
+
+/* Arrows */
 .path-arrow {
   font-size: 24px;
-  opacity: 0.6;
+  opacity: 0.8;
+  color: rgba(255,255,255,0.85);
 }
 
 
