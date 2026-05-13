@@ -107,20 +107,17 @@ body.ndi-page footer {
   color: white;
   padding: 40px 20px;
   display: flex;
-  justify-content: center;   /* centers the whole content block */
-  align-items: center;       /* vertically aligns logo + text */
+  justify-content: center;   /* centers logo + text as a group */
+  align-items: center;       /* vertical alignment */
   gap: 20px;                 /* space between logo and text */
   position: relative;
-  text-align: center;        /* keeps text centered within its own block */
+  text-align: center;
 }
 
-/* Inline logo */
+/* Inline logo as actual image (no cropping) */
 body.ndi-page footer::before {
-  content: "";
-  background-image: url("Assets/ndi-logo-light.svg");
-  background-repeat: no-repeat;
-  background-size: 120px;
-  width: 120px;
-  height: 50px;
+  content: url("Assets/ndi-logo-light.svg");
   display: inline-block;
+  height: auto;
+  width: auto;
 }
