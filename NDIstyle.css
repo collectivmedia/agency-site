@@ -100,3 +100,25 @@ body.ndi-page .portfolio-watermark {
   opacity: 0.04;
   filter: hue-rotate(180deg) saturate(1.2);
 }
+
+/* NDI Footer — Left Aligned with Logo */
+body.ndi-page footer {
+  background: #0F0B1A; /* NDI dark */
+  color: white;
+  padding: 50px 40px;
+  text-align: left; /* LEFT ALIGNMENT */
+  position: relative;
+}
+
+/* Footer logo (left aligned) */
+body.ndi-page footer::before {
+  content: "";
+  background-image: url("Assets/ndi-logo-light.svg");
+  background-repeat: no-repeat;
+  background-size: 140px;
+  background-position: left top; /* LEFT ALIGNMENT */
+  display: block;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 20px;
+}
