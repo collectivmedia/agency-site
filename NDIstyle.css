@@ -118,17 +118,14 @@ body.ndi-page .floating-cta:hover {
 /* NDI WATERMARK (optional)                           */
 /* -------------------------------------------------- */
 
-body.ndi-page .portfolio-watermark {
-  opacity: 0.04;
-  filter: hue-rotate(180deg) saturate(1.2);
-}
-
-/* Larger watermark for training page */
-body.ndi-page .portfolio-watermark {
-  width: 600px;
-  opacity: 0.06;
-  right: -80px;
-  top: 40px;
+/* Large scrolling watermark for NDI pages */
+body.ndi-page section {
+  position: relative;
+  background-image: url("Assets/ndi-logo-icon.svg");
+  background-repeat: no-repeat;
+  background-size: 700px; /* adjust as needed */
+  background-position: right 40px top 300px; /* adjust as needed */
+  background-attachment: scroll;
 }
 
 
