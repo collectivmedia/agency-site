@@ -131,7 +131,7 @@ body.ndi-page .contact-container::before {
   background-image: url("Assets/ndi-logo-icon.svg");
   background-repeat: no-repeat;
   background-size: 1200px; /* bigger */
-  background-position: right -40px top 420px; /* lower */
+  background-position: right -40px top 50px; /* lower */
   opacity: 0.12; /* THIS NOW WORKS */
   pointer-events: none;
   z-index: 0;
