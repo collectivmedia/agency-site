@@ -193,10 +193,18 @@
 
   <a href="contactNDI.html" class="floating-cta-ndi">Contact NDI</a>
 
-  <script>
+<script>
 document.querySelectorAll('.accordion-header').forEach(header => {
   header.addEventListener('click', () => {
     const item = header.parentElement;
+    const accordion = item.parentElement;
+
+    // Close others
+    accordion.querySelectorAll('.accordion-item').forEach(i => {
+      if (i !== item) i.classList.remove('active');
+    });
+
+    // Toggle this one
     item.classList.toggle('active');
   });
 });
