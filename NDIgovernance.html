@@ -42,89 +42,100 @@
   </header>
 
   <!-- MAIN CONTENT -->
-  <section style="position: relative;">
+  <section class="ndi-booklets">
 
-    <!-- Watermark -->
-    <img src="Assets/ndi-logo-icon.svg" alt="Watermark" class="portfolio-watermark" />
+  <!-- DATA GOVERNANCE BOOKLET -->
+  <div class="booklet">
+    <h2 class="booklet-title">Data Governance</h2>
 
-    <div class="contact-container">
+    <div class="booklet-pages" data-booklet="governance">
 
-      <h2 style="font-family: var(--font-display); font-size: 32px; margin-bottom: 10px;">
-        Strong Governance for a Modern Data Landscape
-      </h2>
-
-      <p style="margin-bottom: 25px;">
-        NDI helps organizations establish the structures, policies, and controls needed to manage data responsibly.
-        From stewardship programs to AI governance frameworks, we ensure your organization is prepared for the
-        rapidly evolving data and AI ecosystem.
-      </p>
-
-      <!-- GOVERNANCE SERVICES -->
-      <div class="card" style="margin-bottom: 40px;">
-
-        <p><strong>📘 Data Governance Frameworks</strong><br>
-        Build a scalable governance foundation that defines ownership, accountability, and decision‑making across
-        your data ecosystem.</p>
-
-        <p><strong>🧭 Stewardship Programs</strong><br>
-        Establish clear stewardship roles and responsibilities to ensure data quality, consistency, and compliance
-        across teams and systems.</p>
-
-        <p><strong>📑 Policy Creation & Enforcement</strong><br>
-        Develop and operationalize policies for data access, retention, classification, usage, and lifecycle
-        management — with automated enforcement where possible.</p>
-
-        <p><strong>🔍 Data Quality & Controls</strong><br>
-        Implement monitoring, validation, and remediation processes that keep your data accurate, reliable, and
-        trustworthy.</p>
-
-        <p><strong>🛡 Security Architecture & Risk Management</strong><br>
-        Strengthen your security posture with governance‑aligned controls, risk assessments, and proactive threat
-        mitigation strategies.</p>
-
+      <div class="page active">
+        <div class="page-icon">📘</div>
+        <h3>Governance Frameworks</h3>
+        <p>Establish clear ownership, accountability, and decision‑making structures across your data ecosystem.</p>
       </div>
 
-      <!-- AI GOVERNANCE SECTION -->
-      <h2 style="font-family: var(--font-display); font-size: 32px; margin-bottom: 10px;">
-        AI Security & Governance
-      </h2>
-
-      <p style="margin-bottom: 25px;">
-        As organizations adopt AI and LLM‑powered systems, governance becomes essential. NDI helps you deploy AI
-        responsibly, securely, and in alignment with your organizational values and regulatory requirements.
-      </p>
-
-      <div class="card" style="margin-bottom: 40px;">
-
-        <p><strong>🤖 AI Governance Frameworks</strong><br>
-        Define the policies, controls, and oversight structures needed to manage AI systems throughout their lifecycle.</p>
-
-        <p><strong>🔐 AI Security & Threat Modeling</strong><br>
-        Identify and mitigate risks unique to AI systems — including model poisoning, prompt injection, data leakage,
-        and unauthorized model access.</p>
-
-        <p><strong>🧠 LLM Risk Management</strong><br>
-        Address the challenges of large language models, including hallucinations, bias, over‑reliance, and
-        uncontrolled data exposure.</p>
-
-        <p><strong>🛠 Responsible AI Operations (RAIO)</strong><br>
-        Implement monitoring, auditing, and continuous evaluation processes to ensure AI systems behave as intended.</p>
-
-        <p><strong>🚀 AI Enablement & Adoption</strong><br>
-        NDI specializes in <em>facilitating organizations with using AI to its fullest capabilities, but doing so securely</em>.
-        We help teams adopt AI tools confidently while maintaining strong governance and security boundaries.</p>
-
+      <div class="page">
+        <div class="page-icon">🧭</div>
+        <h3>Stewardship Programs</h3>
+        <p>Define stewardship roles, responsibilities, and workflows that maintain data quality and consistency.</p>
       </div>
 
-      <h2 style="font-family: var(--font-display); font-size: 28px; margin-bottom: 10px;">
-        Ready to Strengthen Your Governance Program?
-      </h2>
+      <div class="page">
+        <div class="page-icon">📑</div>
+        <h3>Policy Creation & Enforcement</h3>
+        <p>Create and operationalize policies for access, retention, classification, and lifecycle management.</p>
+      </div>
 
-      <a href="contactNDI.html" class="btn">Contact NDI</a>
+      <div class="page">
+        <div class="page-icon">🔍</div>
+        <h3>Data Quality Controls</h3>
+        <p>Implement validation, monitoring, and remediation processes that keep your data reliable.</p>
+      </div>
+
+      <div class="page">
+        <div class="page-icon">🛡</div>
+        <h3>Security Architecture Alignment</h3>
+        <p>Ensure governance and security work together to reduce risk and strengthen resilience.</p>
+      </div>
 
     </div>
 
-  </section>
+    <div class="booklet-controls">
+      <button class="prev" data-target="governance">‹</button>
+      <button class="next" data-target="governance">›</button>
+    </div>
+  </div>
+
+
+
+  <!-- AI SECURITY & GOVERNANCE BOOKLET -->
+  <div class="booklet">
+    <h2 class="booklet-title">Secure AI Enablement</h2>
+
+    <div class="booklet-pages" data-booklet="ai">
+
+      <div class="page active">
+        <div class="page-icon">🤖</div>
+        <h3>AI Governance Frameworks</h3>
+        <p>Define policies, controls, and oversight structures for AI systems across their lifecycle.</p>
+      </div>
+
+      <div class="page">
+        <div class="page-icon">🔐</div>
+        <h3>AI Security & Threat Modeling</h3>
+        <p>Address risks such as prompt injection, model poisoning, data leakage, and unauthorized model access.</p>
+      </div>
+
+      <div class="page">
+        <div class="page-icon">🧠</div>
+        <h3>LLM Risk Management</h3>
+        <p>Manage hallucinations, bias, over‑reliance, and uncontrolled data exposure in large language models.</p>
+      </div>
+
+      <div class="page">
+        <div class="page-icon">🛠</div>
+        <h3>Responsible AI Operations (RAIO)</h3>
+        <p>Implement monitoring, auditing, and continuous evaluation to ensure AI behaves as intended.</p>
+      </div>
+
+      <div class="page">
+        <div class="page-icon">🚀</div>
+        <h3>AI Enablement & Adoption</h3>
+        <p>NDI specializes in <em>facilitating organizations with using AI to its fullest capabilities, but doing so securely</em>.</p>
+      </div>
+
+    </div>
+
+    <div class="booklet-controls">
+      <button class="prev" data-target="ai">‹</button>
+      <button class="next" data-target="ai">›</button>
+    </div>
+  </div>
+
+</section>
+
 
   <!-- FOOTER -->
   <footer>
@@ -134,6 +145,26 @@
     </div>
   </footer>
 
+<!-- BOOKLET SCRIPT -->
+  <script>
+document.querySelectorAll('.booklet-controls button').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const target = btn.dataset.target;
+    const pages = document.querySelectorAll(`.booklet-pages[data-booklet="${target}"] .page`);
+    let index = [...pages].findIndex(p => p.classList.contains('active'));
+
+    pages[index].classList.remove('active');
+
+    if (btn.classList.contains('next')) {
+      index = (index + 1) % pages.length;
+    } else {
+      index = (index - 1 + pages.length) % pages.length;
+    }
+
+    pages[index].classList.add('active');
+  });
+});
+</script>
+
 </body>
 </html>
-
