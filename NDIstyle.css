@@ -92,6 +92,28 @@ body.ndi-page .floating-cta:hover {
   transform: translateY(-3px);
 }
 
+/* Floating CTA */
+.floating-cta-ndi {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: var(--ndi-accent);
+  color: white;
+  padding: 14px 22px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 0 14px rgba(31,167,160,0.5);
+  transition: transform 0.2s ease, background 0.2s ease;
+  z-index: 999;
+}
+
+.floating-cta-ndi:hover {
+  background: var(--ndi-accent-light);
+  transform: translateY(-4px);
+}
+
+
 /* -------------------------------------------------- */
 /* NDI WATERMARK (optional)                           */
 /* -------------------------------------------------- */
@@ -100,6 +122,15 @@ body.ndi-page .portfolio-watermark {
   opacity: 0.04;
   filter: hue-rotate(180deg) saturate(1.2);
 }
+
+/* Larger watermark for training page */
+body.ndi-page .portfolio-watermark {
+  width: 600px;
+  opacity: 0.06;
+  right: -80px;
+  top: 40px;
+}
+
 
 /* -------------------------------------------------- */
 /* NDI FOOTER (FINAL WORKING VERSION)                 */
@@ -219,4 +250,31 @@ body.ndi-page footer .ndi-footer-logo {
 
 .booklet-controls button:hover {
   background: var(--ndi-accent-light);
+}
+
+/* -------------------------------------------------- */
+/* Career Pathway Diagram                             */
+/* -------------------------------------------------- */
+
+.career-pathway {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.path-step {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(31,167,160,0.35);
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  backdrop-filter: blur(4px);
+}
+
+.path-arrow {
+  font-size: 24px;
+  opacity: 0.6;
 }
