@@ -125,26 +125,26 @@
 <body class="ndi-page">
 
   <!-- Navigation -->
-  <nav>
-    <a href="../NDIservices.html" class="nav-logo">
-      <img src="../Assets/ndi-logo-light.svg" alt="NDI Services Logo" />
-    </a>
+<nav>
+  <a href="NDIservices.html" class="nav-logo">
+    <img src="Assets/ndi-logo-light.svg" alt="NDI Services Logo" />
+  </a>
 
-    <!-- MOBILE MENU BUTTON -->
-    <button class="ndi-mobile-menu-btn" aria-label="Open Menu">
-      <span></span>
-      <span></span>
-      <span></span>
-    </button>
+  <button class="ndi-mobile-menu-btn" aria-label="Open Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
 
-    <div class="nav-links">
-      <a href="../NDIservices.html">Home</a>
-      <a href="../NDIprivacy.html">Privacy Consulting</a>
-      <a href="../NDIgovernance.html">Security & Governance Consulting</a>
-      <a href="../NDIcareers.html">Career Training</a>
-      <a href="../contactNDI.html">Contact NDI</a>
-    </div>
-  </nav>
+  <div class="nav-links">
+    <a href="../NDIservices.html">Home</a>
+    <a href="../NDIprivacy.html">Privacy Consulting</a>
+    <a href="../NDIgovernance.html">Security & Governance Consulting</a>
+    <a href="../NDIcareers.html">Career Training</a>
+    <a href="../contactNDI.html">Contact NDI</a>
+  </div>
+</nav>
+
 
   <!-- HERO -->
   <header>
@@ -184,20 +184,15 @@
     </div>
   </footer>
 
-  <script>
-    const menuBtn = document.querySelector('.ndi-mobile-menu-btn');
-    const navLinks = document.querySelector('nav .nav-links');
+<script>
+const menuBtn = document.querySelector('.ndi-mobile-menu-btn');
+const navLinks = document.querySelector('nav .nav-links');
 
-    console.log('menuBtn:', menuBtn);
-    console.log('navLinks:', navLinks);
-
-    if (menuBtn && navLinks) {
-      menuBtn.addEventListener('click', () => {
-        menuBtn.classList.toggle('active');
-        navLinks.classList.toggle('open');
-      });
-    }
-  </script>
+menuBtn.addEventListener('click', () => {
+  menuBtn.classList.toggle('active');
+  navLinks.classList.toggle('open');
+});
+</script>
 
 </body>
 </html>
