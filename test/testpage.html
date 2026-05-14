@@ -23,12 +23,12 @@
     <a href="../NDIservices.html" class="nav-logo">
       <img src="Assets/ndi-logo-light.svg" alt="NDI Services Logo" />
     </a>
-<button class="ndi-mobile-menu-btn" aria-label="Open Menu">
-  <span></span>
-  <span></span>
-  <span></span>
-</button>
-
+  <!-- MOBILE MENU BUTTON -->
+  <button class="ndi-mobile-menu-btn" aria-label="Open Menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
     <div class="nav-links">
       <a href="../NDIservices.html">Home</a>
       <a href="../NDIprivacy.html">Privacy Consulting</a>
@@ -97,7 +97,7 @@
     </div>
   </footer>
 
-  <script>
+<script>
 const menuBtn = document.querySelector('.ndi-mobile-menu-btn');
 const navLinks = document.querySelector('nav .nav-links');
 
@@ -106,6 +106,7 @@ menuBtn.addEventListener('click', () => {
   navLinks.classList.toggle('open');
 });
 </script>
+
 
 </body>
 </html>
