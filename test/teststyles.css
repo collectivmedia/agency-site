@@ -13,7 +13,7 @@ body.ndi-page {
 /* NDI LOGO OVERRIDE                                  */
 /* -------------------------------------------------- */
 body.ndi-page .nav-logo img {
-  content: url("Assets/logo2_white.png") !important;
+  content: url("../Assets/logo2_white.png") !important;
   height: 126px;
   width: auto;
   display: block;
@@ -128,7 +128,7 @@ body.ndi-page .contact-container::before {
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("Assets/ndi-logo-icon.svg");
+  background-image: url("../Assets/ndi-logo-icon.svg");
   background-repeat: no-repeat;
   background-size: 1200px; /* bigger */
   background-position: right -40px top 40px; /* lower */
