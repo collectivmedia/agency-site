@@ -505,3 +505,8 @@ body.ndi-page .ndi-mobile-menu-btn {
     transform: translateY(-9px) rotate(-45deg);
   }
 }
+
+  /* Loading or nah */
+body {
+  outline: 10px solid red !important;
+}
