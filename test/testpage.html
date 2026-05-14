@@ -3,146 +3,93 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio — Collectiv Media</title>
-  <link rel="stylesheet" href="teststyles.css" />
-</head>
-<body>
+  <title>Privacy Consulting — NDI Services</title>
 
-  <!-- Background Accent -->
-  <div class="bg-accent"></div>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="NDIstyle.css" />
+
+  <!-- Page‑specific logo override (safe, isolated) -->
+  <style>
+    body.ndi-page .nav-logo img {
+      content: url("Assets/ndi-logo-light.svg") !important;
+    }
+  </style>
+</head>
+
+<body class="ndi-page">
 
   <!-- Navigation -->
   <nav>
-    <a href="index.html" class="nav-logo">
-      <img src="../Assets/logo1_full_recolor.png" alt="Collectiv Media Logo" />
+    <a href="NDIservices.html" class="nav-logo">
+      <img src="Assets/ndi-logo-light.svg" alt="NDI Services Logo" />
     </a>
 
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="NDIservices.html">Data Management Services</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="contact.html">Contact</a>
+    <div class="nav-links">
+      <a href="NDIservices.html">Home</a>
+      <a href="NDIprivacy.html">Privacy Consulting</a>
+      <a href="NDIgovernance.html">Security & Governance Consulting</a>
+      <a href="NDIcareers.html">Career Training</a>
+      <a href="contactNDI.html">Contact NDI</a>
+    </div>
+
   </nav>
 
   <!-- HERO -->
   <header>
-    <h1>Portfolio</h1>
-    <p>A curated selection of our strategic, creative, and content‑driven work.</p>
+    <h1>Privacy Consulting</h1>
+    <p>Protecting your organization through responsible, compliant data practices.</p>
   </header>
 
-  <!-- SECTION LOGO -->
-  <section>
-    <img src="../Assets/logo1_full_recolor.png" alt="Collectiv Media Logo" class="section-logo" />
-    <div class="section-divider"></div>
-  </section>
-
-  <!-- =============================== -->
-  <!-- PROJECT 1 — CONTENT STRATEGY    -->
-  <!-- =============================== -->
+  <!-- MAIN CONTENT -->
   <section style="position: relative;">
 
     <!-- Watermark -->
-    <img src="../Assets/Collectiv_Media-clear.png" alt="Watermark" class="portfolio-watermark" />
+    <img src="Assets/ndi-logo-icon.svg" alt="Watermark" class="portfolio-watermark" />
 
-    <h2 style="font-family: var(--font-display); font-size: 34px; margin-bottom: 15px;">
-      Content Strategy Frameworks
-    </h2>
+    <div class="contact-container">
+      <h2 style="font-family: var(--font-display); font-size: 32px; margin-bottom: 10px;">
+        Privacy Expertise You Can Trust
+      </h2>
 
-    <p style="max-width: 800px; margin-bottom: 30px;">
-      We develop comprehensive content strategy frameworks that align brand goals, audience insights,
-      and platform‑specific best practices. These frameworks guide messaging, structure editorial workflows,
-      and ensure consistent, scalable content across channels.
-    </p>
+      <p style="margin-bottom: 25px;">
+        NDI helps organizations build strong, compliant, and ethical privacy programs.
+        From regulatory alignment to data lifecycle governance, we ensure your
+        organization protects the people it serves.
+      </p>
 
-    <!-- MEDIA AREA -->
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
-      <div style="flex: 1 1 300px; min-height: 200px; background: #f4f4f4; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-        <p style="opacity: 0.6;">Add image or graphic here</p>
+      <div class="card" style="margin-bottom: 40px;">
+        <p><strong>🔐 Privacy Program Development</strong><br>
+        Build a scalable privacy program aligned with your organization’s mission and risk profile.</p>
+
+        <p><strong>📜 Regulatory Compliance</strong><br>
+        Navigate GDPR, CCPA/CPRA, HIPAA, FERPA, and other global privacy frameworks with confidence.</p>
+
+        <p><strong>🧭 Data Lifecycle Governance</strong><br>
+        Establish policies and controls for collection, storage, access, retention, and deletion.</p>
+
+        <p><strong>🛡 Risk Assessments & DPIAs</strong><br>
+        Identify privacy risks early and implement mitigation strategies that protect your users.</p>
+
+        <p><strong>🤝 Training & Awareness</strong><br>
+        Empower your teams with privacy‑first thinking and operational best practices.</p>
       </div>
 
-      <div style="flex: 1 1 300px; min-height: 200px; background: #f4f4f4; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-        <p style="opacity: 0.6;">Add video or sample here</p>
-      </div>
+      <h2 style="font-family: var(--font-display); font-size: 28px; margin-bottom: 10px;">
+        Ready to Strengthen Your Privacy Program?
+      </h2>
+      <br>
+
+      <a href="contactNDI.html" class="btn">Contact NDI</a>
     </div>
 
-  </section>
-
-  <!-- =============================== -->
-  <!-- PROJECT 2 — CREATIVE DIRECTION  -->
-  <!-- =============================== -->
-  <section style="position: relative;">
-
-    <!-- Watermark -->
-    <img src="../Assets/Collectiv_Media-clear.png" alt="Watermark" class="portfolio-watermark" />
-
-    <h2 style="font-family: var(--font-display); font-size: 34px; margin-bottom: 15px;">
-      Creative Direction for Campaigns
-    </h2>
-
-    <p style="max-width: 800px; margin-bottom: 30px;">
-      From concept to execution, we lead creative direction for multi‑channel campaigns. This includes
-      visual direction, messaging cohesion, asset planning, and ensuring every creative element aligns
-      with the brand’s strategic goals.
-    </p>
-
-    <!-- MEDIA AREA -->
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
-      <div style="flex: 1 1 300px; min-height: 200px; background: #f4f4f4; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-        <p style="opacity: 0.6;">Add campaign visuals here</p>
-      </div>
-
-      <div style="flex: 1 1 300px; min-height: 200px; background: #f4f4f4; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-        <p style="opacity: 0.6;">Add video or storyboard here</p>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- =============================== -->
-  <!-- PROJECT 3 — UX & WEB CONTENT    -->
-  <!-- =============================== -->
-  <section style="position: relative;">
-
-    <!-- Watermark -->
-    <img src="../Assets/Collectiv_Media-clear.png" alt="Watermark" class="portfolio-watermark" />
-
-    <h2 style="font-family: var(--font-display); font-size: 34px; margin-bottom: 15px;">
-      Web Content & UX Writing
-    </h2>
-
-    <p style="max-width: 800px; margin-bottom: 30px;">
-      We craft clear, structured, and conversion‑focused content for websites and digital experiences.
-      Our UX writing approach ensures clarity, usability, and brand voice alignment across every touchpoint.
-    </p>
-
-    <!-- MEDIA AREA -->
-    <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
-      <div style="flex: 1 1 300px; min-height: 200px; background: #f4f4f4; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-        <p style="opacity: 0.6;">Add webpage screenshots here</p>
-      </div>
-
-      <div style="flex: 1 1 300px; min-height: 200px; background: #f4f4f4; border-radius: 12px; display: flex; align-items: center; justify-content: center;">
-        <p style="opacity: 0.6;">Add UX samples here</p>
-      </div>
-    </div>
-
-  </section>
-
-  <!-- CTA -->
-  <section style="text-align: center;">
-    <h2 style="font-family: var(--font-display); font-size: 32px; margin-bottom: 20px;">
-      Want to See More?
-    </h2>
-    <a href="contact.html" class="btn">Start a Project</a>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <div class="footer-logo">
-      <img src="../Assets/logo1_full_recolor.png" alt="Collectiv Media Logo" />
+    <div class="ndi-footer-inner">
+      <img src="Assets/ndi-logo-light.svg" class="ndi-footer-logo" alt="NDI Logo">
+      <span>© 2026 NDI Services of Collectiv Media — All Rights Reserved</span>
     </div>
-    © 2026 Collectiv Media — All Rights Reserved
   </footer>
 
 </body>
