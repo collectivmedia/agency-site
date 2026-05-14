@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="NDIstyle.css" />
 
-    <!-- Page‑specific logo override (safe, isolated) -->
+  <!-- Page‑specific logo override (safe, isolated) -->
   <style>
     body.ndi-page .nav-logo img {
       content: url("Assets/ndi-logo-light.svg") !important;
@@ -24,6 +24,13 @@
       <img src="Assets/ndi-logo-light.svg" alt="NDI Services Logo" />
     </a>
 
+    <!-- MOBILE MENU BUTTON -->
+    <button class="ndi-mobile-menu-btn" aria-label="Open Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
     <div class="nav-links">
       <a href="NDIservices.html">Home</a>
       <a href="NDIprivacy.html">Privacy Consulting</a>
@@ -31,7 +38,6 @@
       <a href="NDIcareers.html">Career Training</a>
       <a href="contactNDI.html">Contact NDI</a>
     </div>
-
   </nav>
 
   <!-- HERO -->
@@ -43,98 +49,95 @@
   <!-- MAIN CONTENT -->
   <section class="ndi-booklets">
 
-  <!-- DATA GOVERNANCE BOOKLET -->
-  <div class="booklet">
-    <h2 class="booklet-title">Data Governance</h2>
+    <!-- DATA GOVERNANCE BOOKLET -->
+    <div class="booklet">
+      <h2 class="booklet-title">Data Governance</h2>
 
-    <div class="booklet-pages" data-booklet="governance">
+      <div class="booklet-pages" data-booklet="governance">
 
-      <div class="page active">
-        <div class="page-icon">📘</div>
-        <h3>Governance Frameworks</h3>
-        <p>Establish clear ownership, accountability, and decision‑making structures across your data ecosystem.</p>
+        <div class="page active">
+          <div class="page-icon">📘</div>
+          <h3>Governance Frameworks</h3>
+          <p>Establish clear ownership, accountability, and decision‑making structures across your data ecosystem.</p>
+        </div>
+
+        <div class="page">
+          <div class="page-icon">🧭</div>
+          <h3>Stewardship Programs</h3>
+          <p>Define stewardship roles, responsibilities, and workflows that maintain data quality and consistency.</p>
+        </div>
+
+        <div class="page">
+          <div class="page-icon">📑</div>
+          <h3>Policy Creation & Enforcement</h3>
+          <p>Create and operationalize policies for access, retention, classification, and lifecycle management.</p>
+        </div>
+
+        <div class="page">
+          <div class="page-icon">🔍</div>
+          <h3>Data Quality Controls</h3>
+          <p>Implement validation, monitoring, and remediation processes that keep your data reliable.</p>
+        </div>
+
+        <div class="page">
+          <div class="page-icon">🛡</div>
+          <h3>Security Architecture Alignment</h3>
+          <p>Ensure governance and security work together to reduce risk and strengthen resilience.</p>
+        </div>
+
       </div>
 
-      <div class="page">
-        <div class="page-icon">🧭</div>
-        <h3>Stewardship Programs</h3>
-        <p>Define stewardship roles, responsibilities, and workflows that maintain data quality and consistency.</p>
+      <div class="booklet-controls">
+        <button class="prev" data-target="governance">‹</button>
+        <button class="next" data-target="governance">›</button>
       </div>
-
-      <div class="page">
-        <div class="page-icon">📑</div>
-        <h3>Policy Creation & Enforcement</h3>
-        <p>Create and operationalize policies for access, retention, classification, and lifecycle management.</p>
-      </div>
-
-      <div class="page">
-        <div class="page-icon">🔍</div>
-        <h3>Data Quality Controls</h3>
-        <p>Implement validation, monitoring, and remediation processes that keep your data reliable.</p>
-      </div>
-
-      <div class="page">
-        <div class="page-icon">🛡</div>
-        <h3>Security Architecture Alignment</h3>
-        <p>Ensure governance and security work together to reduce risk and strengthen resilience.</p>
-      </div>
-
     </div>
 
-    <div class="booklet-controls">
-      <button class="prev" data-target="governance">‹</button>
-      <button class="next" data-target="governance">›</button>
-    </div>
-  </div>
+    <!-- AI SECURITY & GOVERNANCE BOOKLET -->
+    <div class="booklet">
+      <h2 class="booklet-title">Secure AI Enablement</h2>
 
+      <div class="booklet-pages" data-booklet="ai">
 
+        <div class="page active">
+          <div class="page-icon">🤖</div>
+          <h3>AI Governance Frameworks</h3>
+          <p>Define policies, controls, and oversight structures for AI systems across their lifecycle.</p>
+        </div>
 
-  <!-- AI SECURITY & GOVERNANCE BOOKLET -->
-  <div class="booklet">
-    <h2 class="booklet-title">Secure AI Enablement</h2>
+        <div class="page">
+          <div class="page-icon">🔐</div>
+          <h3>AI Security & Threat Modeling</h3>
+          <p>Address risks such as prompt injection, model poisoning, data leakage, and unauthorized model access.</p>
+        </div>
 
-    <div class="booklet-pages" data-booklet="ai">
+        <div class="page">
+          <div class="page-icon">🧠</div>
+          <h3>LLM Risk Management</h3>
+          <p>Manage hallucinations, bias, over‑reliance, and uncontrolled data exposure in large language models.</p>
+        </div>
 
-      <div class="page active">
-        <div class="page-icon">🤖</div>
-        <h3>AI Governance Frameworks</h3>
-        <p>Define policies, controls, and oversight structures for AI systems across their lifecycle.</p>
+        <div class="page">
+          <div class="page-icon">🛠</div>
+          <h3>Responsible AI Operations (RAIO)</h3>
+          <p>Implement monitoring, auditing, and continuous evaluation to ensure AI behaves as intended.</p>
+        </div>
+
+        <div class="page">
+          <div class="page-icon">🚀</div>
+          <h3>AI Enablement & Adoption</h3>
+          <p>NDI specializes in <em>facilitating organizations with using AI to its fullest capabilities, but doing so securely</em>.</p>
+        </div>
+
       </div>
 
-      <div class="page">
-        <div class="page-icon">🔐</div>
-        <h3>AI Security & Threat Modeling</h3>
-        <p>Address risks such as prompt injection, model poisoning, data leakage, and unauthorized model access.</p>
+      <div class="booklet-controls">
+        <button class="prev" data-target="ai">‹</button>
+        <button class="next" data-target="ai">›</button>
       </div>
-
-      <div class="page">
-        <div class="page-icon">🧠</div>
-        <h3>LLM Risk Management</h3>
-        <p>Manage hallucinations, bias, over‑reliance, and uncontrolled data exposure in large language models.</p>
-      </div>
-
-      <div class="page">
-        <div class="page-icon">🛠</div>
-        <h3>Responsible AI Operations (RAIO)</h3>
-        <p>Implement monitoring, auditing, and continuous evaluation to ensure AI behaves as intended.</p>
-      </div>
-
-      <div class="page">
-        <div class="page-icon">🚀</div>
-        <h3>AI Enablement & Adoption</h3>
-        <p>NDI specializes in <em>facilitating organizations with using AI to its fullest capabilities, but doing so securely</em>.</p>
-      </div>
-
     </div>
 
-    <div class="booklet-controls">
-      <button class="prev" data-target="ai">‹</button>
-      <button class="next" data-target="ai">›</button>
-    </div>
-  </div>
-
-</section>
-
+  </section>
 
   <!-- FOOTER -->
   <footer>
@@ -144,28 +147,39 @@
     </div>
   </footer>
 
-<a href="contactNDI.html" class="floating-cta-ndi">Contact NDI</a>
-  
-<!-- BOOKLET SCRIPT -->
+  <a href="contactNDI.html" class="floating-cta-ndi">Contact NDI</a>
+
+  <!-- BOOKLET SCRIPT -->
   <script>
-document.querySelectorAll('.booklet-controls button').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const target = btn.dataset.target;
-    const pages = document.querySelectorAll(`.booklet-pages[data-booklet="${target}"] .page`);
-    let index = [...pages].findIndex(p => p.classList.contains('active'));
+    document.querySelectorAll('.booklet-controls button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.dataset.target;
+        const pages = document.querySelectorAll(`.booklet-pages[data-booklet="${target}"] .page`);
+        let index = [...pages].findIndex(p => p.classList.contains('active'));
 
-    pages[index].classList.remove('active');
+        pages[index].classList.remove('active');
 
-    if (btn.classList.contains('next')) {
-      index = (index + 1) % pages.length;
-    } else {
-      index = (index - 1 + pages.length) % pages.length;
-    }
+        if (btn.classList.contains('next')) {
+          index = (index + 1) % pages.length;
+        } else {
+          index = (index - 1 + pages.length) % pages.length;
+        }
 
-    pages[index].classList.add('active');
-  });
-});
-</script>
+        pages[index].classList.add('active');
+      });
+    });
+  </script>
+
+  <!-- MOBILE NAV JS -->
+  <script>
+    const menuBtn = document.querySelector('.ndi-mobile-menu-btn');
+    const navLinks = document.querySelector('nav .nav-links');
+
+    menuBtn.addEventListener('click', () => {
+      menuBtn.classList.toggle('active');
+      navLinks.classList.toggle('open');
+    });
+  </script>
 
 </body>
 </html>
