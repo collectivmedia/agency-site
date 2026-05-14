@@ -419,7 +419,7 @@ body.ndi-page footer .ndi-footer-logo {
   display: block;
 }
 
-/* Hide mobile button on desktop */
+/* Hide hamburger on desktop */
 .ndi-mobile-menu-btn {
   display: none;
 }
@@ -451,7 +451,7 @@ body.ndi-page footer .ndi-footer-logo {
     transition: 0.3s ease;
   }
 
-  /* NAVIGATION COLLAPSES INTO A PANEL */
+  /* NAV LINKS BECOME A SLIDE-IN PANEL */
   nav .nav-links {
     position: fixed;
     top: 0;
@@ -469,18 +469,16 @@ body.ndi-page footer .ndi-footer-logo {
     box-shadow: -4px 0 12px rgba(0,0,0,0.4);
   }
 
-  /* When menu is open */
   nav .nav-links.open {
     right: 0;
   }
 
-  /* Mobile nav link styling */
   nav .nav-links a {
     font-size: 20px;
     padding: 6px 0;
   }
 
-  /* Hide the special right-side link on mobile */
+  /* Hide the right-side special link on mobile */
   nav .nav-special {
     display: none;
   }
