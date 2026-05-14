@@ -4,8 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Data & Technology Services — NDI</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="NDIstyle.css">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="NDIstyle.css">
 
   <!-- Page‑specific logo override (safe, isolated) -->
   <style>
@@ -23,6 +24,13 @@
     <a href="NDIservices.html" class="nav-logo">
       <img src="Assets/ndi-logo-light.svg" alt="NDI Services Logo" />
     </a>
+
+    <!-- MOBILE MENU BUTTON -->
+    <button class="ndi-mobile-menu-btn" aria-label="Open Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
     <!-- Main navigation links -->
     <div class="nav-links">
@@ -212,15 +220,26 @@
   </section>
 
   <!-- FOOTER -->
-<footer>
-  <div class="ndi-footer-inner">
-    <img src="Assets/ndi-logo-light.svg" class="ndi-footer-logo" alt="NDI Logo">
-    <span>© 2026 NDI Services of Collectiv Media — All Rights Reserved</span>
-  </div>
-</footer>
+  <footer>
+    <div class="ndi-footer-inner">
+      <img src="Assets/ndi-logo-light.svg" class="ndi-footer-logo" alt="NDI Logo">
+      <span>© 2026 NDI Services of Collectiv Media — All Rights Reserved</span>
+    </div>
+  </footer>
 
   <!-- FLOATING CTA BUTTON -->
   <a href="contactNDI.html" class="floating-cta">Start a Project</a>
+
+  <!-- MOBILE NAV JS -->
+  <script>
+    const menuBtn = document.querySelector('.ndi-mobile-menu-btn');
+    const navLinks = document.querySelector('nav .nav-links');
+
+    menuBtn.addEventListener('click', () => {
+      menuBtn.classList.toggle('active');
+      navLinks.classList.toggle('open');
+    });
+  </script>
 
 </body>
 </html>
