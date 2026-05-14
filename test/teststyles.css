@@ -14,7 +14,7 @@ body.ndi-page {
 /* -------------------------------------------------- */
 body.ndi-page .nav-logo img {
   content: url("../Assets/ndi-logo-light.svg") !important;
-  height: 126px;
+  height: 40px;
   width: auto;
   display: block;
 }
