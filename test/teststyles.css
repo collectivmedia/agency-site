@@ -13,7 +13,7 @@ body.ndi-page {
 /* NDI LOGO OVERRIDE                                  */
 /* -------------------------------------------------- */
 body.ndi-page .nav-logo img {
-  content: url("../Assets/logo2_white.png") !important;
+  content: url("../Assets/ndi-logo-light.svg") !important;
   height: 126px;
   width: auto;
   display: block;
