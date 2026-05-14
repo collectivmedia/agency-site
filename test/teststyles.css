@@ -427,6 +427,12 @@ body.ndi-page footer .ndi-footer-logo {
 /* MOBILE BREAKPOINT */
 @media (max-width: 900px) {
 
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   /* Show hamburger */
   .ndi-mobile-menu-btn {
     display: flex;
@@ -478,7 +484,7 @@ body.ndi-page footer .ndi-footer-logo {
     padding: 6px 0;
   }
 
-  /* Hide the right-side special link on mobile */
+  /* Hide nav-special on mobile IF it exists */
   nav .nav-special {
     display: none;
   }
