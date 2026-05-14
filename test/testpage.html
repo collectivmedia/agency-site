@@ -23,6 +23,11 @@
     <a href="../NDIservices.html" class="nav-logo">
       <img src="Assets/ndi-logo-light.svg" alt="NDI Services Logo" />
     </a>
+<button class="ndi-mobile-menu-btn" aria-label="Open Menu">
+  <span></span>
+  <span></span>
+  <span></span>
+</button>
 
     <div class="nav-links">
       <a href="../NDIservices.html">Home</a>
@@ -91,6 +96,16 @@
       <span>© 2026 NDI Services of Collectiv Media — All Rights Reserved</span>
     </div>
   </footer>
+
+  <script>
+const menuBtn = document.querySelector('.ndi-mobile-menu-btn');
+const navLinks = document.querySelector('nav .nav-links');
+
+menuBtn.addEventListener('click', () => {
+  menuBtn.classList.toggle('active');
+  navLinks.classList.toggle('open');
+});
+</script>
 
 </body>
 </html>
