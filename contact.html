@@ -13,23 +13,28 @@
   <div class="bg-accent"></div>
 
   <!-- Navigation -->
-<nav>
-  <a href="index.html" class="nav-logo">
-    <img src="Assets/logo1_full_recolor.png" alt="Collectiv Media Logo" />
-  </a>
+  <nav>
+    <a href="index.html" class="nav-logo">
+      <img src="Assets/logo1_full_recolor.png" alt="Collectiv Media Logo" />
+    </a>
 
-  <div class="nav-links">
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="services.html">Services</a>
-    <a href="portfolio.html">Portfolio</a>
-    <a href="contact.html">Contact</a>
-  </div>
+    <!-- MOBILE MENU BUTTON -->
+    <button class="cm-mobile-menu-btn" aria-label="Open Menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
 
-  <a href="NDIservices.html" class="nav-special">Data & Technology Services</a>
-</nav>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="services.html">Services</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </div>
 
-
+    <a href="NDIservices.html" class="nav-special">Data & Technology Services</a>
+  </nav>
 
   <!-- HERO -->
   <header>
@@ -103,12 +108,23 @@
     © 2026 Collectiv Media — All Rights Reserved
   </footer>
 
+  <!-- SUCCESS MESSAGE SCRIPT -->
   <script>
-    // Show success message if ?sent=1
     const params = new URLSearchParams(window.location.search);
     if (params.get("sent") === "1") {
       document.getElementById("success-message").style.display = "block";
     }
+  </script>
+
+  <!-- MOBILE NAV JS -->
+  <script>
+    const cmMenuBtn = document.querySelector('.cm-mobile-menu-btn');
+    const cmNavLinks = document.querySelector('nav .nav-links');
+
+    cmMenuBtn.addEventListener('click', () => {
+      cmMenuBtn.classList.toggle('active');
+      cmNavLinks.classList.toggle('open');
+    });
   </script>
 
 </body>
