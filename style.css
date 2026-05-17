@@ -445,55 +445,13 @@ nav {
    COLLECTIV MEDIA — MOBILE NAV
    ============================ */
 
-/* Default: show hamburger, but it will only really matter on small screens */
+/* Default: hide hamburger on desktop */
 .cm-mobile-menu-btn {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 32px;
-  height: 22px;
-  cursor: pointer;
-  margin-left: auto;
-  z-index: 1001;
+  display: none !important;
 }
 
-.cm-mobile-menu-btn span {
-  display: block;
-  height: 3px;
-  width: 100%;
-  background: var(--brand-white);
-  border-radius: 3px;
-  transition: 0.3s ease;
-}
-
-/* Desktop / large screens: hide hamburger, use normal inline nav */
-@media (min-width: 901px) {
-  .cm-mobile-menu-btn {
-    display: none;
-  }
-
-  nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  .nav-links {
-    display: flex;
-    gap: 18px;
-    position: static;
-    height: auto;
-    width: auto;
-    box-shadow: none;
-  }
-
-  .nav-special {
-    display: inline-block;
-  }
-}
-
-/* Mobile: slide-in menu, hide nav-special */
-@media (max-width: 900px) {
+/* MOBILE BREAKPOINT — expanded to 1200px */
+@media (max-width: 1200px) {
 
   nav {
     display: flex !important;
@@ -505,7 +463,29 @@ nav {
     z-index: 1000;
   }
 
+  .cm-mobile-menu-btn {
+    all: unset;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 22px;
+    cursor: pointer;
+    margin-left: auto;
+    z-index: 1001;
+  }
+
+  .cm-mobile-menu-btn span {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background: var(--brand-white);
+    border-radius: 3px;
+    transition: 0.3s ease;
+  }
+
   nav .nav-links {
+    all: unset;
     position: fixed !important;
     top: 0;
     right: -100%;
